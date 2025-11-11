@@ -1,0 +1,14 @@
+CONFIG: data/graphs/c_alias/init.g,data/grammars/c_alias.cnf
+        Number of vertices: 2446224
+        1.757s  1.802s  1.745s  1.798s  1.830s  1.850s  1.813s  1.829s  1.886s  1.842s
+        Time elapsed (avg): 1.815263 seconds. Result: 37 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/block.g,data/grammars/c_alias.cnf
+        Number of vertices: 3423234
+        9.506s  9.403s  9.418s  9.674s  9.660s  9.592s  9.773s  9.772s  9.954s  10.217s
+        Time elapsed (avg): 9.696828 seconds. Result: 50 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/ipc.g,data/grammars/c_alias.cnf
+        Number of vertices: 3401022
+        6.514s  6.426s  6.476s  6.396s  6.571s  6.436s  6.439s  6.469s  6.451s  6.549s
+        Time elapsed (avg): 6.472613 seconds. Result: 64 (return code 0) ()

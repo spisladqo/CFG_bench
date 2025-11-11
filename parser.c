@@ -237,10 +237,14 @@ void parser(char *config_i, grammar_t *grammar, GrB_Matrix **adj_matrices) {
         graph_line_count++;
 
         char *saveptr;
-        char *u_str = strtok_r(line, " ", &saveptr);
-        char *a_str = strtok_r(NULL, " ", &saveptr);
-        char *v_str = strtok_r(NULL, " ", &saveptr);
-        char *rest = strtok_r(NULL, " ", &saveptr);
+        char *u_str = strtok_r(line, "\t", &saveptr);
+        // printf("u_str: %s\n", u_str);
+        char *v_str = strtok_r(NULL, "\t", &saveptr);
+        // printf("v_str: %s\n", v_str);
+        char *a_str = strtok_r(NULL, "\t", &saveptr);
+        // printf("a_str: %s\n", a_str);
+        char *rest = strtok_r(NULL, "\t", &saveptr);
+        // printf("rest: %s\n", rest);
 
         if (!u_str || !a_str || !v_str || rest != NULL) {
             line = end ? end + 1 : line + strlen(line);

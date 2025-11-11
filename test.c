@@ -3,11 +3,23 @@
 #include <LAGraphX.h>
 #include <parser.h>
 #include <time.h>
+#include <ctype.h>
+
+// #define run_algorithm()                                                        \
+//     LAGraph_CFL_reachability(outputs, adj_matrices, grammar.terms_count,       \
+//                              grammar.nonterms_count, grammar.rules,            \
+//                              grammar.rules_count, msg)
+
+// #define run_algorithm()                                                        \
+//     LAGraph_CFL_reachability_multsrc(outputs, adj_matrices, src, src_count, grammar.terms_count,       \
+//                              grammar.nonterms_count, grammar.rules,            \
+//                              grammar.rules_count, msg)
 
 #define run_algorithm()                                                        \
-    LAGraph_CFL_reachability(outputs, adj_matrices, grammar.terms_count,       \
+    LAGraph_CFL_reachability_multsrc_fast(outputs, adj_matrices, src, src_count, grammar.terms_count,       \
                              grammar.nonterms_count, grammar.rules,            \
-                             grammar.rules_count, msg)
+                             grammar.rules_count, msg, 3)
+
 
 #define check_error(error)                                                     \
     {                                                                          \
@@ -92,20 +104,17 @@ char *configs_java[] = {
 
 char *configs_c_alias[] = {
     "data/graphs/c_alias/init.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/block.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/fs.g,data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/mm.g,data/grammars/c_alias.cnf",
     "data/graphs/c_alias/ipc.g,data/grammars/c_alias.cnf",
     "data/graphs/c_alias/lib.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/mm.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/net.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/security.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/sound.g,data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/block.g,data/grammars/c_alias.cnf",
     "data/graphs/c_alias/arch.g,data/grammars/c_alias.cnf",
     "data/graphs/c_alias/crypto.g,data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/security.g,data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/sound.g,data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/fs.g,data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/net.g,data/grammars/c_alias.cnf",
     "data/graphs/c_alias/drivers.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/kernel.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/postgre.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/apache.g,data/grammars/c_alias.cnf",
     NULL};
 
 char *configs_vf[] = {"data/graphs/vf/xz.g,data/grammars/vf.cnf",
@@ -115,12 +124,88 @@ char *configs_vf[] = {"data/graphs/vf/xz.g,data/grammars/vf.cnf",
 char *configs_my[] = {"data/graphs/vf/xz.g,data/grammars/vf.cnf", NULL};
 
 // Number of benchmark runs on a single graph
-#define COUNT 1
+#define COUNT 10
 // If true, the first run is done without measuring time (warm-up)
 #define HOT false
 // Use your custom configuration for the benchmark (default is the xz.g graph
 // and vf.cnf grammar)
-#define configs configs_my
+#define configs configs_c_alias
+
+GrB_Index* load_array_stream(const char *filename, int *count) {
+    FILE *file = fopen(filename, "r");
+    if (file == NULL) {
+        return NULL;
+    }
+
+    // First pass: count numbers by streaming
+    *count = 0;
+    int ch;
+    int in_number = 0;
+    
+    while ((ch = fgetc(file)) != EOF) {
+        if (isdigit(ch)) {
+            if (!in_number) {
+                (*count)++;
+                in_number = 1;
+            }
+        } else {
+            in_number = 0;
+        }
+    }
+
+    if (*count == 0) {
+        fclose(file);
+        return NULL;
+    }
+
+    // Allocate array
+    GrB_Index *array = malloc(*count * sizeof(GrB_Index));
+    if (array == NULL) {
+        fclose(file);
+        return NULL;
+    }
+
+    // Second pass: read numbers properly
+    rewind(file);
+    
+    int index = 0;
+    in_number = 0;
+    char number_buffer[32];
+    int buf_index = 0;
+    
+    while ((ch = fgetc(file)) != EOF && index < *count) {
+        if (isdigit(ch)) {
+            if (buf_index < sizeof(number_buffer) - 1) {
+                number_buffer[buf_index++] = (char)ch;
+            }
+            in_number = 1;
+        } else {
+            if (in_number) {
+                number_buffer[buf_index] = '\0';
+                array[index++] = atoi(number_buffer);
+                buf_index = 0;
+                in_number = 0;
+            }
+        }
+    }
+
+    // Handle last number if file ends with digit
+    if (in_number && index < *count) {
+        number_buffer[buf_index] = '\0';
+        array[index++] = atoi(number_buffer);
+    }
+
+    fclose(file);
+    
+    // This should now equal the actual count
+    if (index != *count) {
+        free(array);
+        *count = 0;
+        return NULL;
+    }
+    
+    return array;
+}
 
 int main(int argc, char **argv) {
     setup();
@@ -136,12 +221,60 @@ int main(int argc, char **argv) {
         fflush(stdout);
         parser(config, &grammar, &adj_matrices);
 
+
         double start[COUNT];
         double end[COUNT];
 
-        if (HOT) {
-            run_algorithm();
+        // if (HOT) {
+        //     run_algorithm();
+        // }
+
+        char *filename;
+        int src_count;
+        if (strstr(config, "init.g") != NULL) {
+            // printf("graph: init\n");
+            filename = "../CFPQ_PyAlgo/results/sources/init_src.txt_sample.txt";
         }
+        if (strstr(config, "mm.g") != NULL) {
+            // printf("graph: mm\n");
+            filename = "../CFPQ_PyAlgo/results/sources/mm_src.txt_sample.txt";
+        }
+        if (strstr(config, "ipc.g") != NULL) {
+            // printf("graph: ipc\n");
+            filename = "../CFPQ_PyAlgo/results/sources/ipc_src.txt_sample.txt";
+        }
+        if (strstr(config, "lib.g") != NULL) {
+            // printf("graph: lib\n");
+            filename = "../CFPQ_PyAlgo/results/sources/lib_src.txt_sample.txt";
+        }
+        if (strstr(config, "block.g") != NULL) {
+            // printf("graph: block\n");
+            filename = "../CFPQ_PyAlgo/results/sources/block_src.txt_sample.txt";
+        }
+        if (strstr(config, "arch.g") != NULL) {
+            // printf("graph: arch\n");
+            filename = "../CFPQ_PyAlgo/results/sources/arch_src.txt_sample.txt";
+        }
+        if (strstr(config, "crypto.g") != NULL) {
+            filename = "../CFPQ_PyAlgo/results/sources/crypto_src.txt_sample.txt";
+        }
+        if (strstr(config, "security.g") != NULL) {
+            filename = "../CFPQ_PyAlgo/results/sources/security_src.txt_sample.txt";
+        }
+        if (strstr(config, "sound.g") != NULL) {
+            filename = "../CFPQ_PyAlgo/results/sources/sound_src.txt_sample.txt";
+        }
+        if (strstr(config, "fs.g") != NULL) {
+            filename = "../CFPQ_PyAlgo/results/sources/fs_src.txt_sample.txt";
+        }
+        if (strstr(config, "net.g") != NULL) {
+            filename = "../CFPQ_PyAlgo/results/sources/net_src.txt_sample.txt";
+        }
+        if (strstr(config, "drivers.g") != NULL) {
+            filename = "../CFPQ_PyAlgo/results/sources/drivers_src.txt_sample.txt";
+        }
+        GrB_Index* src = load_array_stream(filename, &src_count);
+        printf("src_count: %d\n", src_count);
 
         GrB_Index nnz = 0;
         for (size_t i = 0; i < COUNT; i++) {

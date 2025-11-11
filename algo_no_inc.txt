@@ -1,0 +1,1017 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.58153' (creator: callgrind-3.25.1)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 6385353490
+Trigger: Program termination
+Profiled target:  ./test (PID 58153, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                      
+--------------------------------------------------------------------------------
+26,702,968,794 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                      file:function
+--------------------------------------------------------------------------------
+3,436,286,246 (12.87%)  ???:GB_add_phase1._omp_fn.0 [/usr/local/lib64/libgraphblas.so.10.1.0]
+3,276,056,642 (12.27%)  ???:GB__AaddB__second_bool._omp_fn.0 [/usr/local/lib64/libgraphblas.so.10.1.0]
+2,188,116,752 ( 8.19%)  ???:GB_AxB_saxpy3_flopcount._omp_fn.0 [/usr/local/lib64/libgraphblas.so.10.1.0]
+1,776,614,241 ( 6.65%)  parser.c:parser [/home/spisladqo/projects/c/spla/CFG_bench/test]
+1,304,611,086 ( 4.89%)  ???:GB_cumsum [/usr/local/lib64/libgraphblas.so.10.1.0]
+1,243,561,892 ( 4.66%)  ???:GB_AxB_saxpy3_sym_hh._omp_fn.0 [/usr/local/lib64/libgraphblas.so.10.1.0]
+1,240,234,812 ( 4.64%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strcmp-avx2.S:__strcmp_avx2 [/usr/lib64/libc.so.6]
+1,075,579,554 ( 4.03%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:_int_malloc [/usr/lib64/libc.so.6]
+  513,284,168 ( 1.92%)  ???:GB_add_phase0._omp_fn.2 [/usr/local/lib64/libgraphblas.so.10.1.0]
+  391,704,592 ( 1.47%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:_int_free [/usr/lib64/libc.so.6]
+  376,606,882 ( 1.41%)  ???:GB_add_phase0._omp_fn.1 [/usr/local/lib64/libgraphblas.so.10.1.0]
+  340,127,682 ( 1.27%)  parser.c:add_symbol [/home/spisladqo/projects/c/spla/CFG_bench/test]
+  325,221,199 ( 1.22%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:_int_free_create_chunk [/usr/lib64/libc.so.6]
+  278,039,809 ( 1.04%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:_int_free_merge_chunk [/usr/lib64/libc.so.6]
+  264,669,408 ( 0.99%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/team.c:gomp_team_start [/usr/lib64/libgomp.so.1.0.0]
+  258,139,776 ( 0.97%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib64/libc.so.6]
+  256,281,537 ( 0.96%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:_int_memalign [/usr/lib64/libc.so.6]
+  251,787,726 ( 0.94%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:unlink_chunk.isra.0 [/usr/lib64/libc.so.6]
+  246,714,060 ( 0.92%)  ???:GB__Asaxpy3B_noM__any_pair_iso._omp_fn.3 [/usr/local/lib64/libgraphblas.so.10.1.0]
+  231,842,716 ( 0.87%)  ???:GB_subref_phase3._omp_fn.0 [/usr/local/lib64/libgraphblas.so.10.1.0]
+  221,718,441 ( 0.83%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:malloc [/usr/lib64/libc.so.6]
+  208,062,755 ( 0.78%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:free [/usr/lib64/libc.so.6]
+  205,995,866 ( 0.77%)  parser.c:is_non_terminal [/home/spisladqo/projects/c/spla/CFG_bench/test]
+  202,962,240 ( 0.76%)  ???:GB_subref_phase0._omp_fn.2 [/usr/local/lib64/libgraphblas.so.10.1.0]
+  198,880,974 ( 0.74%)  ???:GB_create_coarse_task._omp_fn.0 [/usr/local/lib64/libgraphblas.so.10.1.0]
+  188,209,681 ( 0.70%)  ???:GB_free_memory [/usr/local/lib64/libgraphblas.so.10.1.0]
+  187,066,936 ( 0.70%)  ???:GB_hyper_prune._omp_fn.0 [/usr/local/lib64/libgraphblas.so.10.1.0]
+  180,200,448 ( 0.67%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/team.c:gomp_new_team [/usr/lib64/libgomp.so.1.0.0]
+  173,039,796 ( 0.65%)  ???:GB_malloc_memory [/usr/local/lib64/libgraphblas.so.10.1.0]
+  164,493,664 ( 0.62%)  ???:GB_hyper_prune._omp_fn.1 [/usr/local/lib64/libgraphblas.so.10.1.0]
+  155,503,626 ( 0.58%)  ???:GB_add_phase2._omp_fn.0 [/usr/local/lib64/libgraphblas.so.10.1.0]
+  144,368,306 ( 0.54%)  ???:GB_transplant [/usr/local/lib64/libgraphblas.so.10.1.0]
+  137,965,968 ( 0.52%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:_mid_memalign.isra.0 [/usr/lib64/libc.so.6]
+  137,664,781 ( 0.52%)  ???:GB_new [/usr/local/lib64/libgraphblas.so.10.1.0]
+  135,150,336 ( 0.51%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/team.c:gomp_team_end [/usr/lib64/libgomp.so.1.0.0]
+  122,663,744 ( 0.46%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/loop.c:GOMP_loop_dynamic_start [/usr/lib64/libgomp.so.1.0.0]
+  122,004,066 ( 0.46%)  ???:GB_bix_free [/usr/local/lib64/libgraphblas.so.10.1.0]
+  110,298,838 ( 0.41%)  ???:GB_AxB_saxpy3 [/usr/local/lib64/libgraphblas.so.10.1.0]
+  105,337,846 ( 0.39%)  ???:GB_jit_kernel._omp_fn.1 [/home/spisladqo/.SuiteSparse/GrB10.1.0/lib/42/libGB_jit__subassign_04__7f1c504111100144.so]
+   97,236,720 ( 0.36%)  ???:GB_add_phase2 [/usr/local/lib64/libgraphblas.so.10.1.0]
+   96,839,448 ( 0.36%)  ???:GB_mxm [/usr/local/lib64/libgraphblas.so.10.1.0]
+   94,383,546 ( 0.35%)  ???:GB_AxB_meta [/usr/local/lib64/libgraphblas.so.10.1.0]
+   93,021,520 ( 0.35%)  ???:GB_Global_malloc_function [/usr/local/lib64/libgraphblas.so.10.1.0]
+   92,424,780 ( 0.35%)  ???:GB_add_phase0 [/usr/local/lib64/libgraphblas.so.10.1.0]
+   90,243,336 ( 0.34%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:malloc_consolidate [/usr/lib64/libc.so.6]
+   90,100,224 ( 0.34%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/parallel.c:GOMP_parallel [/usr/lib64/libgomp.so.1.0.0]
+   89,692,318 ( 0.34%)  ???:GB_AxB_saxpy3_slice_balanced [/usr/local/lib64/libgraphblas.so.10.1.0]
+   81,653,328 ( 0.31%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/config/linux/bar.c:gomp_team_barrier_wait_end [/usr/lib64/libgomp.so.1.0.0]
+   81,312,372 ( 0.30%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/tls_get_addr.S:__tls_get_addr [/usr/lib64/ld-linux-x86-64.so.2]
+   77,817,559 ( 0.29%)  ???:GB_Matrix_free [/usr/local/lib64/libgraphblas.so.10.1.0]
+   76,071,312 ( 0.28%)  ???:GB_ewise [/usr/local/lib64/libgraphblas.so.10.1.0]
+   75,362,089 ( 0.28%)  ???:GB_nnz [/usr/local/lib64/libgraphblas.so.10.1.0]
+   71,975,216 ( 0.27%)  ???:GB_calloc_memory [/usr/local/lib64/libgraphblas.so.10.1.0]
+   68,643,534 ( 0.26%)  ???:GB_AxB_saxpy3_flopcount [/usr/local/lib64/libgraphblas.so.10.1.0]
+   66,608,880 ( 0.25%)  ???:GB_subref_phase2._omp_fn.0 [/usr/local/lib64/libgraphblas.so.10.1.0]
+   66,251,542 ( 0.25%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/work.c:gomp_init_work_share [/usr/lib64/libgomp.so.1.0.0]
+   64,668,782 ( 0.24%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/iter.c:gomp_iter_dynamic_next [/usr/lib64/libgomp.so.1.0.0]
+   64,530,708 ( 0.24%)  ???:GB_Global_free_function [/usr/local/lib64/libgraphblas.so.10.1.0]
+   63,174,877 ( 0.24%)  ???:GB_conform [/usr/local/lib64/libgraphblas.so.10.1.0]
+   61,331,872 ( 0.23%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/work.c:gomp_work_share_end_nowait [/usr/lib64/libgomp.so.1.0.0]
+   60,037,998 ( 0.22%)  ???:GB_jit_kernel._omp_fn.3 [/home/spisladqo/.SuiteSparse/GrB10.1.0/lib/42/libGB_jit__subassign_04__7f1c504111100144.so]
+   59,415,251 ( 0.22%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/work.c:gomp_work_share_start [/usr/lib64/libgomp.so.1.0.0]
+   58,984,162 ( 0.22%)  ???:GB_add [/usr/local/lib64/libgraphblas.so.10.1.0]
+   56,797,834 ( 0.21%)  ???:GB__Asaxpy3B_noM__any_pair_iso [/usr/local/lib64/libgraphblas.so.10.1.0]
+   55,164,932 ( 0.21%)  ???:GB_bix_alloc [/usr/local/lib64/libgraphblas.so.10.1.0]
+   54,469,849 ( 0.20%)  ???:GB_phy_free [/usr/local/lib64/libgraphblas.so.10.1.0]
+   54,059,896 ( 0.20%)  ???:GB__AaddB__second_bool [/usr/local/lib64/libgraphblas.so.10.1.0]
+   53,916,616 ( 0.20%)  ???:GB_subref_slice._omp_fn.0 [/usr/local/lib64/libgraphblas.so.10.1.0]
+   52,486,108 ( 0.20%)  ???:GB_nnz_full [/usr/local/lib64/libgraphblas.so.10.1.0]
+   49,148,336 ( 0.18%)  ???:GB_AxB_dot2 [/usr/local/lib64/libgraphblas.so.10.1.0]
+   48,062,194 ( 0.18%)  ???:GB_AxB_iso [/usr/local/lib64/libgraphblas.so.10.1.0]
+   46,458,556 ( 0.17%)  ???:GB_add_phase1 [/usr/local/lib64/libgraphblas.so.10.1.0]
+   46,019,168 ( 0.17%)  ???:GrB_mxm [/usr/local/lib64/libgraphblas.so.10.1.0]
+   44,008,224 ( 0.16%)  ???:GrB_Matrix_eWiseAdd_BinaryOp.part.0 [/usr/local/lib64/libgraphblas.so.10.1.0]
+   39,620,398 ( 0.15%)  ???:GB_hy_free [/usr/local/lib64/libgraphblas.so.10.1.0]
+   39,527,644 ( 0.15%)  ???:GB_new_bix [/usr/local/lib64/libgraphblas.so.10.1.0]
+   39,418,848 ( 0.15%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/parallel.c:gomp_resolve_num_threads [/usr/lib64/libgomp.so.1.0.0]
+   39,418,848 ( 0.15%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/task.c:gomp_init_task [/usr/lib64/libgomp.so.1.0.0]
+   35,719,748 ( 0.13%)  /home/spisladqo/projects/c/spla/LAGraph/experimental/algorithm/LAGraph_CFL_reachability_multsrc.c:LAGraph_CFL_reachability_multsrc [/usr/local/lib64/liblagraphx.so.1.2.0]
+   34,974,076 ( 0.13%)  ???:GB_transpose [/usr/local/lib64/libgraphblas.so.10.1.0]
+   34,495,262 ( 0.13%)  ???:GB_nnz_held [/usr/local/lib64/libgraphblas.so.10.1.0]
+   33,965,225 ( 0.13%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:_int_free_maybe_consolidate.part.0 [/usr/lib64/libc.so.6]
+   33,787,584 ( 0.13%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/task.c:gomp_end_task [/usr/lib64/libgomp.so.1.0.0]
+   32,593,506 ( 0.12%)  ???:GB_werk_push [/usr/local/lib64/libgraphblas.so.10.1.0]
+   32,247,655 ( 0.12%)  ???:GB_Pending_free [/usr/local/lib64/libgraphblas.so.10.1.0]
+   32,183,440 ( 0.12%)  ???:GB_Context_nthreads_max [/usr/local/lib64/libgraphblas.so.10.1.0]
+   30,971,952 ( 0.12%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/alloc.c:gomp_aligned_alloc [/usr/lib64/libgomp.so.1.0.0]
+   30,815,866 ( 0.12%)  ???:GB_hyper_hash_free [/usr/local/lib64/libgraphblas.so.10.1.0]
+   30,390,120 ( 0.11%)  ???:GB_Descriptor_get [/usr/local/lib64/libgraphblas.so.10.1.0]
+   30,033,186 ( 0.11%)  ???:GB_phybix_free [/usr/local/lib64/libgraphblas.so.10.1.0]
+   28,935,934 ( 0.11%)  ???:GB_ewise_slice [/usr/local/lib64/libgraphblas.so.10.1.0]
+   27,328,972 ( 0.10%)  ???:GB_AxB_saxpy [/usr/local/lib64/libgraphblas.so.10.1.0]
+   27,142,572 ( 0.10%)  ???:GB_Matrix_diag [/usr/local/lib64/libgraphblas.so.10.1.0]
+   27,030,432 ( 0.10%)  ???:GB_bitmap_expand_to_hyper [/usr/local/lib64/libgraphblas.so.10.1.0]
+   26,883,708 ( 0.10%)  ???:GB_BinaryOp_compatible [/usr/local/lib64/libgraphblas.so.10.1.0]
+   25,839,310 ( 0.10%)  ???:GB_Global_memtable_add [/usr/local/lib64/libgraphblas.so.10.1.0]
+   25,650,148 ( 0.10%)  ???:GB_werk_pop [/usr/local/lib64/libgraphblas.so.10.1.0]
+   24,572,778 ( 0.09%)  ???:GB_binop_builtin [/usr/local/lib64/libgraphblas.so.10.1.0]
+   24,137,574 ( 0.09%)  ???:GB_Context_nthreads_max_get [/usr/local/lib64/libgraphblas.so.10.1.0]
+   24,126,484 ( 0.09%)  ???:GrB_Matrix_nvals [/usr/local/lib64/libgraphblas.so.10.1.0]
+   23,372,960 ( 0.09%)  ???:GB_cast_factory [/usr/local/lib64/libgraphblas.so.10.1.0]
+   23,046,680 ( 0.09%)  ???:GB_Global_memtable_remove [/usr/local/lib64/libgraphblas.so.10.1.0]
+   22,292,349 ( 0.08%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/arena.c:free
+   22,024,820 ( 0.08%)  ???:GB_Context_chunk [/usr/local/lib64/libgraphblas.so.10.1.0]
+   21,892,416 ( 0.08%)  ???:GrB_vxm [/usr/local/lib64/libgraphblas.so.10.1.0]
+   21,553,226 ( 0.08%)  ???:GB_Type_compatible [/usr/local/lib64/libgraphblas.so.10.1.0]
+   21,055,298 ( 0.08%)  ???:GB_AxB_saxpy_sparsity [/usr/local/lib64/libgraphblas.so.10.1.0]
+   20,906,590 ( 0.08%)  ???:GB_hyper_prune [/usr/local/lib64/libgraphblas.so.10.1.0]
+   20,261,072 ( 0.08%)  ???:GB_compatible [/usr/local/lib64/libgraphblas.so.10.1.0]
+   19,709,424 ( 0.07%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/config/linux/x86/futex.h:gomp_team_barrier_wait_end
+   19,241,938 ( 0.07%)  ???:GB_accum_mask [/usr/local/lib64/libgraphblas.so.10.1.0]
+   19,145,754 ( 0.07%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib64/libc.so.6]
+   18,877,360 ( 0.07%)  ???:GB_is_diagonal [/usr/local/lib64/libgraphblas.so.10.1.0]
+   17,871,204 ( 0.07%)  ???:GB_AxB_semiring_builtin [/usr/local/lib64/libgraphblas.so.10.1.0]
+   17,112,636 ( 0.06%)  ???:GB_Global_bitmap_switch_matrix_get [/usr/local/lib64/libgraphblas.so.10.1.0]
+   17,078,880 ( 0.06%)  ???:GB_AxB_saxpy3_sym_hh [/usr/local/lib64/libgraphblas.so.10.1.0]
+   16,893,792 ( 0.06%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/libgomp.h:GOMP_parallel
+   16,893,792 ( 0.06%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/libgomp.h:gomp_resolve_num_threads
+   16,893,792 ( 0.06%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/work.c:gomp_fini_work_share [/usr/lib64/libgomp.so.1.0.0]
+   16,754,250 ( 0.06%)  ???:GB_AxB_saxpy3_cumsum [/usr/local/lib64/libgraphblas.so.10.1.0]
+   16,518,612 ( 0.06%)  ???:GB_Context_chunk_get [/usr/local/lib64/libgraphblas.so.10.1.0]
+   16,341,952 ( 0.06%)  ???:GB_add_iso [/usr/local/lib64/libgraphblas.so.10.1.0]
+   16,240,854 ( 0.06%)  ???:GB_conform_hyper [/usr/local/lib64/libgraphblas.so.10.1.0]
+   16,184,324 ( 0.06%)  ???:GB_Matrix_free'2 [/usr/local/lib64/libgraphblas.so.10.1.0]
+   15,413,910 ( 0.06%)  ???:GB__Asaxpy3B_noM__any_pair_iso._omp_fn.2 [/usr/local/lib64/libgraphblas.so.10.1.0]
+   14,078,160 ( 0.05%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/config/linux/bar.h:gomp_team_barrier_wait_final
+   14,078,160 ( 0.05%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/priority_queue.h:gomp_init_task
+   13,578,328 ( 0.05%)  ???:GB_all_aliased [/usr/local/lib64/libgraphblas.so.10.1.0]
+   13,530,300 ( 0.05%)  ???:GB_convert_hyper_to_sparse_test [/usr/local/lib64/libgraphblas.so.10.1.0]
+   13,516,015 ( 0.05%)  ???:GB_block [/usr/local/lib64/libgraphblas.so.10.1.0]
+   13,416,347 ( 0.05%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/config/linux/ptrlock.h:gomp_work_share_start
+   13,032,554 ( 0.05%)  ???:GB_hyper_hash_need [/usr/local/lib64/libgraphblas.so.10.1.0]
+   12,956,736 ( 0.05%)  ???:GB__Adot2B__any_pair_iso [/usr/local/lib64/libgraphblas.so.10.1.0]
+   12,766,134 ( 0.05%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/stdlib/../stdlib/strtol_l.c:____strtol_l_internal [/usr/lib64/libc.so.6]
+   12,176,636 ( 0.05%)  ???:GB_AxB_dot [/usr/local/lib64/libgraphblas.so.10.1.0]
+   11,913,290 ( 0.04%)  ???:GB_Matrix_new [/usr/local/lib64/libgraphblas.so.10.1.0]
+   11,392,992 ( 0.04%)  ???:GrB_Matrix_eWiseAdd_BinaryOp [/usr/local/lib64/libgraphblas.so.10.1.0]
+   11,262,528 ( 0.04%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/config/linux/bar.c:gomp_team_barrier_wait_final [/usr/lib64/libgomp.so.1.0.0]
+   11,262,528 ( 0.04%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/config/linux/bar.h:gomp_new_team
+   11,262,528 ( 0.04%)  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:memalign [/usr/lib64/libc.so.6]
+   10,992,228 ( 0.04%)  ???:GB_Global_burble_get [/usr/local/lib64/libgraphblas.so.10.1.0]
+   10,926,140 ( 0.04%)  ???:GB_task_cumsum [/usr/local/lib64/libgraphblas.so.10.1.0]
+   10,335,724 ( 0.04%)  ???:GB_Global_malloc_tracking_get [/usr/local/lib64/libgraphblas.so.10.1.0]
+   10,278,405 ( 0.04%)  ???:GB_hyper_hash_build [/usr/local/lib64/libgraphblas.so.10.1.0]
+    9,941,104 ( 0.04%)  ???:GrB_Matrix_diag [/usr/local/lib64/libgraphblas.so.10.1.0]
+    9,561,576 ( 0.04%)  ???:GB_ek_slice [/usr/local/lib64/libgraphblas.so.10.1.0]
+    9,560,740 ( 0.04%)  ???:GB_xalloc_memory [/usr/local/lib64/libgraphblas.so.10.1.0]
+    9,460,452 ( 0.04%)  ???:GB_convert_sparse_to_bitmap_test [/usr/local/lib64/libgraphblas.so.10.1.0]
+    9,364,928 ( 0.04%)  ???:GB_any_aliased [/usr/local/lib64/libgraphblas.so.10.1.0]
+    9,038,024 ( 0.03%)  ???:GB_transplant_conform [/usr/local/lib64/libgraphblas.so.10.1.0]
+    8,958,316 ( 0.03%)  ???:GB_memset [/usr/local/lib64/libgraphblas.so.10.1.0]
+    8,936,180 ( 0.03%)  ???:GB_boolean_rename [/usr/local/lib64/libgraphblas.so.10.1.0]
+    8,745,532 ( 0.03%)  ???:GB_quicksort_2_32_32'2 [/usr/local/lib64/libgraphblas.so.10.1.0]
+    8,488,896 ( 0.03%)  ???:GB_convert_int [/usr/local/lib64/libgraphblas.so.10.1.0]
+    8,446,911 ( 0.03%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/config/posix/pool.h:gomp_new_team
+    8,446,896 ( 0.03%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/libgomp.h:gomp_end_task
+    8,446,896 ( 0.03%)  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/priority_queue.h:gomp_new_team
+    8,042,458 ( 0.03%)  ???:GB_AxB_saxpy3_symbolic [/usr/local/lib64/libgraphblas.so.10.1.0]
+    7,822,602 ( 0.03%)  ???:GB_cast_int [/usr/local/lib64/libgraphblas.so.10.1.0]
+    7,743,674 ( 0.03%)  ???:GB_add_sparsity [/usr/local/lib64/libgraphblas.so.10.1.0]
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: parser.c
+--------------------------------------------------------------------------------
+Ir                     
+
+-- line 22 ----------------------------------------
+            .           } ProductionRule;
+            .           
+            .           typedef struct {
+            .               int u;
+            .               int term_index;
+            .               int v;
+            .           } GraphEdge;
+            .           
+           12 ( 0.00%)  void init_symbol_list(SymbolList *list) {
+            8 ( 0.00%)      list->symbols = NULL;
+            8 ( 0.00%)      list->count = 0;
+           12 ( 0.00%)  }
+            .           
+       90,216 ( 0.00%)  int add_symbol(SymbolList *list, const char *symbol) {
+   89,455,056 ( 0.34%)      for (int i = 0; i < list->count; ++i) {
+  250,356,894 ( 0.94%)          if (strcmp(list->symbols[i], symbol) == 0) {
+  394,305,226 ( 1.48%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strcmp-avx2.S:__strcmp_avx2 (17,882,635x)
+          815 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+       19,334 ( 0.00%)              return i;
+            .                   }
+            .               }
+            .           
+       69,801 ( 0.00%)      list->symbols = realloc(list->symbols, sizeof(char *) * (list->count + 1));
+      773,159 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:realloc (5,369x)
+          785 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+       64,428 ( 0.00%)      list->symbols[list->count] = strdup(symbol);
+    1,401,627 ( 0.01%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/strdup.c:strdup (5,369x)
+            .           
+       26,845 ( 0.00%)      return list->count++;
+       45,108 ( 0.00%)  }
+            .           
+            8 ( 0.00%)  void free_symbol_list(SymbolList *list) {
+       26,857 ( 0.00%)      for (int i = 0; i < list->count; ++i) {
+       53,690 ( 0.00%)          free(list->symbols[i]);
+      568,816 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:free (5,369x)
+            .               }
+            .           
+           10 ( 0.00%)      free(list->symbols);
+          330 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:free (2x)
+            6 ( 0.00%)      init_symbol_list(list);
+           20 ( 0.00%)  => parser.c:init_symbol_list (2x)
+            6 ( 0.00%)  }
+            .           
+       70,873 ( 0.00%)  bool is_non_terminal(const char *symbol, SymbolList non_terms) {
+   48,458,875 ( 0.18%)      for (int i = 0; i < non_terms.count; ++i) {
+  157,442,493 ( 0.59%)          if (strcmp(non_terms.symbols[i], symbol) == 0) {
+  279,738,844 ( 1.05%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strcmp-avx2.S:__strcmp_avx2 (12,110,961x)
+        8,592 ( 0.00%)              return true;
+            .                   }
+            .               }
+            .           
+        2,147 ( 0.00%)      return false;
+       12,886 ( 0.00%)  }
+            .           
+            .           void process_rule(const char *line, SymbolList *non_terms, SymbolList *terms,
+       34,368 ( 0.00%)                    ProductionRule *rules, int *rule_idx) {
+       25,776 ( 0.00%)      char *arrow = strstr(line, "->");
+      213,546 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strstr-sse2-unaligned.S:__strstr_sse2_unaligned (4,296x)
+        8,592 ( 0.00%)      if (!arrow)
+            .                   return;
+            .           
+      137,472 ( 0.00%)      char lhs[MAX_LINE_LEN] = {0};
+       38,664 ( 0.00%)      strncpy(lhs, line, arrow - line);
+      117,533 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strncpy-avx2.S:__strncpy_avx2 (4,296x)
+       25,776 ( 0.00%)      lhs[strcspn(lhs, " \t\n")] = '\0';
+      178,262 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strcspn-sse4.c:__strcspn_sse42 (4,296x)
+       25,776 ( 0.00%)      int lhs_id = add_symbol(non_terms, lhs);
+  207,526,113 ( 0.78%)  => parser.c:add_symbol (4,296x)
+            .           
+       12,888 ( 0.00%)      char *rhs = arrow + 2;
+       55,844 ( 0.00%)      while (*rhs == ' ' || *rhs == '\t')
+        4,295 ( 0.00%)          rhs++;
+       34,368 ( 0.00%)      rhs[strcspn(rhs, "\n")] = '\0';
+      240,921 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strcspn-sse4.c:__strcspn_sse42 (4,296x)
+            .           
+       21,480 ( 0.00%)      ProductionRule rule = {lhs_id, -1, -1, 0};
+            .           
+       17,184 ( 0.00%)      if (strlen(rhs) == 0) {
+           14 ( 0.00%)          rules[(*rule_idx)++] = rule;
+            1 ( 0.00%)          return;
+            .               }
+            .           
+        8,590 ( 0.00%)      char *symbols[2] = {NULL, NULL};
+        4,295 ( 0.00%)      int count = 0;
+       25,770 ( 0.00%)      char *token = strtok(rhs, " ");
+      521,177 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/strtok.c:strtok (4,295x)
+       38,657 ( 0.00%)      while (token && count < 2) {
+       38,658 ( 0.00%)          symbols[count++] = token;
+       32,215 ( 0.00%)          token = strtok(NULL, " ");
+      395,651 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/strtok.c:strtok (6,443x)
+            .               }
+            .           
+       47,247 ( 0.00%)      for (int i = 0; i < count; ++i) {
+        6,443 ( 0.00%)          SymbolList *arr =
+       88,055 ( 0.00%)              is_non_terminal(symbols[i], *non_terms) ? non_terms : terms;
+  485,734,710 ( 1.82%)  => parser.c:is_non_terminal (6,443x)
+       51,544 ( 0.00%)          int id = add_symbol(arr, symbols[i]);
+  317,129,787 ( 1.19%)  => parser.c:add_symbol (6,443x)
+       12,886 ( 0.00%)          if (i == 0)
+       12,885 ( 0.00%)              rule.rhs1 = id;
+            .                   else
+        4,296 ( 0.00%)              rule.rhs2 = id;
+            .               }
+            .           
+       64,425 ( 0.00%)      rules[(*rule_idx)++] = rule;
+        8,592 ( 0.00%)  }
+            .           
+      297,384 ( 0.00%)  bool is_number(const char *s) {
+      446,076 ( 0.00%)      if (s == NULL || *s == '\0')
+            .                   return false;
+    1,675,876 ( 0.01%)      while (*s) {
+    4,480,103 ( 0.02%)          if (!isdigit(*s))
+    1,378,492 ( 0.01%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/ctype/../include/ctype.h:__ctype_b_loc (344,623x)
+          885 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+            .                       return false;
+      344,623 ( 0.00%)          s++;
+            .               }
+       74,346 ( 0.00%)      return true;
+      148,692 ( 0.00%)  }
+            .           
+            8 ( 0.00%)  char *read_entire_file(char *path) {
+            .           
+           16 ( 0.00%)      FILE *file = fopen(path, "rb");
+          798 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        1,010 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/libio/iofopen.c:fopen@@GLIBC_2.2.5 (2x)
+            4 ( 0.00%)      if (file == NULL) {
+            .                   fprintf(stderr,
+            .                           "\x1B[31m[ERROR]\033[0m Problem with opening file by %s path\n",
+            .                           path);
+            .                   exit(-1);
+            .               }
+            .           
+           16 ( 0.00%)      fseek(file, 0, SEEK_END);
+          821 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        1,110 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/libio/fseek.c:fseek (2x)
+           14 ( 0.00%)      long file_size = ftell(file);
+          789 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+          234 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/libio/ioftell.c:ftell (2x)
+           12 ( 0.00%)      fseek(file, 0, SEEK_SET);
+          408 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/libio/fseek.c:fseek (2x)
+            .           
+           12 ( 0.00%)      char *buffer = (char *)malloc(file_size + 1);
+          698 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:malloc (2x)
+           22 ( 0.00%)      if (fread(buffer, 1, file_size, file) == 0) {
+          765 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        1,354 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/libio/iofread.c:fread (2x)
+            .                   fprintf(stderr,
+            .                           "\x1B[31m[ERROR]\033[0m Problem with reading file by %s path\n",
+            .                           path);
+            .                   exit(-1);
+            .               };
+            8 ( 0.00%)      buffer[file_size] = '\0';
+           12 ( 0.00%)      fclose(file);
+          778 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        1,234 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/libio/iofclose.c:fclose@@GLIBC_2.2.5 (2x)
+            .           
+            2 ( 0.00%)      return buffer;
+            4 ( 0.00%)  }
+            .           
+            6 ( 0.00%)  GrB_Index parser(char *config_i, grammar_t *grammar, GrB_Matrix **adj_matrices) {
+            9 ( 0.00%)      char *config = strdup(config_i);
+          837 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+          260 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/strdup.c:strdup (1x)
+           12 ( 0.00%)      char *graph_buf = read_entire_file(strtok(config, ","));
+          778 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        7,007 ( 0.00%)  => parser.c:read_entire_file (1x)
+          119 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/strtok.c:strtok (1x)
+            7 ( 0.00%)      char *grammar_buf = read_entire_file(strtok(NULL, ","));
+        3,122 ( 0.00%)  => parser.c:read_entire_file (1x)
+          130 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/strtok.c:strtok (1x)
+            .           
+            .               SymbolList non_terms, terms;
+            3 ( 0.00%)      init_symbol_list(&non_terms);
+           10 ( 0.00%)  => parser.c:init_symbol_list (1x)
+            3 ( 0.00%)      init_symbol_list(&terms);
+           10 ( 0.00%)  => parser.c:init_symbol_list (1x)
+            .           
+            1 ( 0.00%)      ProductionRule *rules = NULL;
+            1 ( 0.00%)      int rule_count = 0;
+            1 ( 0.00%)      int capacity = 0;
+            .           
+            1 ( 0.00%)      int graph_line_count = 0;
+            .           
+            2 ( 0.00%)      char *line = grammar_buf;
+            .           
+            1 ( 0.00%)      char **grammar_lines = NULL;
+            1 ( 0.00%)      int grammar_lines_count = 0;
+            1 ( 0.00%)      int grammar_lines_capacity = 0;
+            .           
+            1 ( 0.00%)      bool first = true;
+       17,197 ( 0.00%)      while (*line) {
+       25,792 ( 0.00%)          char *end = strchr(line, '\n');
+      132,524 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strchr-avx2.S:__strchr_avx2 (4,298x)
+          840 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        8,596 ( 0.00%)          if (end)
+        8,596 ( 0.00%)              *end = '\0';
+            .           
+        8,596 ( 0.00%)          if (first) {
+            5 ( 0.00%)              add_symbol(&non_terms, line);
+        1,299 ( 0.00%)  => parser.c:add_symbol (1x)
+            1 ( 0.00%)              first = false;
+            6 ( 0.00%)              line = end ? end + 1 : line + strlen(line);
+            1 ( 0.00%)              continue;
+            .                   }
+            .           
+       25,786 ( 0.00%)          if (strlen(line) < 3) {
+       96,540 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strlen-avx2.S:__strlen_avx2 (4,297x)
+          829 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+            6 ( 0.00%)              line = end ? end + 1 : line + strlen(line);
+            1 ( 0.00%)              continue;
+            .                   }
+            .           
+       12,888 ( 0.00%)          if (grammar_lines_count >= grammar_lines_capacity) {
+           14 ( 0.00%)              grammar_lines_capacity =
+           68 ( 0.00%)                  grammar_lines_capacity == 0 ? 1 : grammar_lines_capacity * 2;
+            .                       grammar_lines =
+          126 ( 0.00%)                  realloc(grammar_lines, sizeof(char *) * grammar_lines_capacity);
+       52,440 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:realloc (14x)
+            .                   }
+            .           
+       38,664 ( 0.00%)          grammar_lines[grammar_lines_count++] = line;
+            .           
+       25,780 ( 0.00%)          char *arrow = strstr(line, "->");
+      213,546 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strstr-sse2-unaligned.S:__strstr_sse2_unaligned (4,296x)
+          828 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        8,592 ( 0.00%)          if (!arrow) {
+            .                       line = end ? end + 1 : line + strlen(line);
+            .                       continue;
+            .                   }
+            .           
+      137,472 ( 0.00%)          char lhs[MAX_LINE_LEN] = {0};
+       38,668 ( 0.00%)          strncpy(lhs, line, arrow - line);
+      117,533 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strncpy-avx2.S:__strncpy_avx2 (4,296x)
+          878 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+       25,780 ( 0.00%)          lhs[strcspn(lhs, " \t\n")] = '\0';
+      178,262 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strcspn-sse4.c:__strcspn_sse42 (4,296x)
+          796 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+       25,776 ( 0.00%)          int lhs_id = add_symbol(&non_terms, lhs);
+  211,952,095 ( 0.79%)  => parser.c:add_symbol (4,296x)
+            .           
+       25,776 ( 0.00%)          line = end ? end + 1 : line + strlen(line);
+            .               }
+            .           
+       17,189 ( 0.00%)      for (int i = 0; i < grammar_lines_count; i++) {
+       30,072 ( 0.00%)          char *line = grammar_lines[i];
+            .           
+       25,776 ( 0.00%)          if (strlen(line) < 3)
+       96,526 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strlen-avx2.S:__strlen_avx2 (4,296x)
+            .                       continue;
+            .           
+       30,072 ( 0.00%)          if (strstr(line, "->") != NULL) {
+      213,546 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strstr-sse2-unaligned.S:__strstr_sse2_unaligned (4,296x)
+       12,888 ( 0.00%)              if (rule_count >= capacity) {
+           82 ( 0.00%)                  capacity = capacity == 0 ? 1 : capacity * 2;
+          140 ( 0.00%)                  rules = realloc(rules, sizeof(ProductionRule) * capacity);
+       95,626 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:realloc (14x)
+            .                       }
+       38,664 ( 0.00%)              process_rule(line, &non_terms, &terms, rules, &rule_count);
+1,012,944,756 ( 3.79%)  => parser.c:process_rule (4,296x)
+            .                   }
+            .               }
+            8 ( 0.00%)      free(grammar_lines);
+          871 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+          199 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:free (1x)
+            .           
+            1 ( 0.00%)      GraphEdge *edges = NULL;
+            1 ( 0.00%)      int edge_count = 0;
+            1 ( 0.00%)      int max_node = -1;
+            2 ( 0.00%)      line = graph_buf;
+            .           
+      148,697 ( 0.00%)      while (*line) {
+      223,038 ( 0.00%)          char *end = strchr(line, '\n');
+      782,634 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strchr-avx2.S:__strchr_avx2 (37,173x)
+       74,346 ( 0.00%)          if (end)
+       74,346 ( 0.00%)              *end = '\0';
+            .           
+       37,173 ( 0.00%)          graph_line_count++;
+            .           
+            .                   char *saveptr;
+      260,215 ( 0.00%)          char *u_str = strtok_r(line, " ", &saveptr);
+    4,184,461 ( 0.02%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/strtok_r.c:strtok_r (37,173x)
+          835 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+      260,211 ( 0.00%)          char *a_str = strtok_r(NULL, " ", &saveptr);
+    4,151,818 ( 0.02%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/strtok_r.c:strtok_r (37,173x)
+      260,211 ( 0.00%)          char *v_str = strtok_r(NULL, " ", &saveptr);
+    4,365,296 ( 0.02%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/strtok_r.c:strtok_r (37,173x)
+      260,211 ( 0.00%)          char *rest = strtok_r(NULL, " ", &saveptr);
+      929,325 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/strtok_r.c:strtok_r (37,173x)
+            .           
+      297,384 ( 0.00%)          if (!u_str || !a_str || !v_str || rest != NULL) {
+            .                       line = end ? end + 1 : line + strlen(line);
+            .                       continue;
+            .                   }
+            .           
+      446,076 ( 0.00%)          if (!is_number(u_str) || !is_number(v_str)) {
+    8,846,477 ( 0.03%)  => parser.c:is_number (74,346x)
+            .                       fprintf(stderr, "error: %s, %s", u_str, v_str);
+            .                       exit(-1);
+            .                       line = end ? end + 1 : line + strlen(line);
+            .                       continue;
+            .                   }
+            .           
+      185,869 ( 0.00%)          int u = atoi(u_str);
+    6,924,125 ( 0.03%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/stdlib/atoi.c:atoi (37,173x)
+          801 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+      185,865 ( 0.00%)          int v = atoi(v_str);
+    6,882,534 ( 0.03%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/stdlib/atoi.c:atoi (37,173x)
+            .           
+       37,173 ( 0.00%)          int term_index = -1;
+   97,250,149 ( 0.36%)          for (int j = 0; j < terms.count; ++j) {
+  315,942,172 ( 1.18%)              if (strcmp(terms.symbols[j], a_str) == 0) {
+  566,190,702 ( 2.12%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strcmp-avx2.S:__strcmp_avx2 (24,303,244x)
+       74,346 ( 0.00%)                  term_index = j;
+       37,173 ( 0.00%)                  break;
+            .                       }
+            .                   }
+            .           
+      111,519 ( 0.00%)          if (u > max_node)
+           14 ( 0.00%)              max_node = u;
+      111,519 ( 0.00%)          if (v > max_node)
+           66 ( 0.00%)              max_node = v;
+            .           
+       74,346 ( 0.00%)          if (term_index == -1) {
+            .                       line = end ? end + 1 : line + strlen(line);
+            .                       continue;
+            .                   }
+            .           
+      520,422 ( 0.00%)          edges = realloc(edges, (edge_count + 1) * sizeof(GraphEdge));
+    4,282,528 ( 0.02%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:realloc (37,173x)
+      631,941 ( 0.00%)          edges[edge_count++] = (GraphEdge){u, term_index, v};
+            .           
+      223,038 ( 0.00%)          line = end ? end + 1 : line + strlen(line);
+            .               }
+            .           
+            .               LAGraph_rule_WCNF *rules_WCNF =
+           11 ( 0.00%)          calloc(rule_count, sizeof(LAGraph_rule_WCNF));
+       68,973 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:calloc (1x)
+          813 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+            .           
+       17,189 ( 0.00%)      for (int i = 0; i < rule_count; ++i) {
+       42,960 ( 0.00%)          ProductionRule r = rules[i];
+       60,144 ( 0.00%)          rules_WCNF[i] = (LAGraph_rule_WCNF){r.lhs, r.rhs1, r.rhs2, r.index};
+            .               }
+           13 ( 0.00%)      *grammar = (grammar_t){.nonterms_count = non_terms.count,
+            2 ( 0.00%)                             .terms_count = terms.count,
+            .                                      .rules_count = rule_count,
+            .                                      .rules = rules_WCNF};
+            .           
+            9 ( 0.00%)      *adj_matrices = calloc(grammar->terms_count, sizeof(GrB_Matrix));
+       17,469 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:calloc (1x)
+       10,741 ( 0.00%)      for (size_t i = 0; i < terms.count; i++) {
+       27,915 ( 0.00%)          GrB_Matrix_new((*adj_matrices) + i, GrB_BOOL, max_node + 1,
+    2,541,845 ( 0.01%)  => ???:GrB_Matrix_new (2,147x)
+          672 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        4,294 ( 0.00%)                         max_node + 1);
+            .               }
+            .           
+            .               GrB_Scalar true_scalar;
+           10 ( 0.00%)      GrB_Scalar_new(&true_scalar, GrB_BOOL);
+          664 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+          870 ( 0.00%)  => ???:GrB_Scalar_new (1x)
+            9 ( 0.00%)      GrB_Scalar_setElement_BOOL(true_scalar, true);
+       36,253 ( 0.00%)  => ???:GrB_Scalar_setElement_BOOL (1x)
+          791 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+            .           
+            7 ( 0.00%)      GrB_Index *row = malloc(sizeof(GrB_Index) * edge_count);
+          334 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:malloc (1x)
+            7 ( 0.00%)      GrB_Index *col = malloc(sizeof(GrB_Index) * edge_count);
+          334 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:malloc (1x)
+       10,741 ( 0.00%)      for (size_t i = 0; i < terms.count; i++) {
+        2,147 ( 0.00%)          int count = 0;
+            .           
+  319,252,459 ( 1.20%)          for (int j = 0; j < edge_count; ++j) {
+1,037,535,603 ( 3.89%)              if (i == edges[j].term_index) {
+      631,941 ( 0.00%)                  row[count] = edges[j].u;
+      631,941 ( 0.00%)                  col[count] = edges[j].v;
+       37,173 ( 0.00%)                  count++;
+            .                       }
+            .                   }
+            .           
+       32,209 ( 0.00%)          GxB_Matrix_build_Scalar((*adj_matrices)[i], row, col, true_scalar,
+   15,593,573 ( 0.06%)  => ???:GxB_Matrix_build_Scalar (2,147x)
+          755 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+            .                                           count);
+            .           #ifdef DEBUG_parser
+            .                   GxB_print((*adj_matrices)[i], 1);
+            .           #endif
+            .               }
+            .           
+            .               GrB_Index n;
+           12 ( 0.00%)      GrB_Matrix_ncols(&n, *adj_matrices[0]);
+          716 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+           50 ( 0.00%)  => ???:GrB_Matrix_ncols (1x)
+            6 ( 0.00%)      printf("%d\n", n);
+          894 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/stdio-common/printf.c:printf (1x)
+            .           
+            4 ( 0.00%)      free(row);
+           72 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:free (1x)
+            4 ( 0.00%)      free(col);
+           72 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:free (1x)
+            8 ( 0.00%)      GrB_free(&true_scalar);
+          680 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+          464 ( 0.00%)  => ???:GrB_Scalar_free (1x)
+            .           
+            .           #ifdef DEBUG_parser
+            .               printf("Non-terminals:\n");
+            .               for (int i = 0; i < non_terms.count; ++i)
+            .                   printf("%d: %s\n", i, non_terms.symbols[i]);
+            .           
+            .               // printf("\nTerminals:\n");
+            .               // for (int i = 0; i < terms.count; ++i)
+-- line 340 ----------------------------------------
+-- line 357 ----------------------------------------
+            .               // }
+            .           
+            .               printf("\nGraph Info:\n");
+            .               printf("Number of nodes: %d\n", max_node + 1);
+            .               printf("Edges: %d\n", edge_count);
+            .               printf("Graph lines: %d\n", graph_line_count);
+            .           #endif
+            .           
+            3 ( 0.00%)      free_symbol_list(&non_terms);
+      389,760 ( 0.00%)  => parser.c:free_symbol_list (1x)
+            3 ( 0.00%)      free_symbol_list(&terms);
+      259,983 ( 0.00%)  => parser.c:free_symbol_list (1x)
+            4 ( 0.00%)      free(rules);
+           65 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:free (1x)
+            .           
+            4 ( 0.00%)      free(edges);
+           72 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:free (1x)
+            4 ( 0.00%)      free(graph_buf);
+           72 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:free (1x)
+            4 ( 0.00%)      free(grammar_buf);
+           65 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:free (1x)
+            4 ( 0.00%)      free(config);
+           85 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c:free (1x)
+            .           
+            1 ( 0.00%)      return n;
+            2 ( 0.00%)  }
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /home/spisladqo/projects/c/spla/LAGraph/experimental/algorithm/LAGraph_CFL_reachability_multsrc.c
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 137 ----------------------------------------
+        .               // These parameters will become unsigned
+        .               int32_t src_count,              // The total number of source vertices
+        .               int32_t terms_count,            // The total number of terminal symbols in the CFG.
+        .               int32_t nonterms_count,         // The total number of non-terminal symbols in the CFG.
+        .               const LAGraph_rule_WCNF *rules, // The rules of the CFG.
+        .               size_t rules_count,             // The total number of rules in the CFG.
+        .               char *msg                       // Message string for error reporting.
+        .           )
+       30 ( 0.00%)  {
+        .               // Declare workspace and clear the msg string, if not NULL
+        .               GrB_Matrix *T;
+        .               GrB_Matrix *TSrc;
+        .               GrB_Matrix MSrc;
+        .               GrB_Matrix M;
+        .               GrB_Matrix A;
+        .               GrB_Vector a;
+        .               GrB_Index n; // number of vertices in the graph
+        2 ( 0.00%)      GrB_Matrix identity_matrix = NULL;
+        2 ( 0.00%)      GrB_Index *nnzs_T = NULL;
+        2 ( 0.00%)      GrB_Index *nnzs_TSrc_B = NULL;
+        2 ( 0.00%)      GrB_Index *nnzs_TSrc_C = NULL;
+       14 ( 0.00%)      LG_CLEAR_MSG;
+        2 ( 0.00%)      size_t msg_len = 0; // For error formatting
+        2 ( 0.00%)      bool iso_flag = false;
+        .               GrB_Scalar true_scalar;
+        .               GrB_Vector ones_vec;
+        .           
+        .               // Will change the interface and omit this check in the future
+       14 ( 0.00%)      if (nonterms_count < 0 || terms_count < 0)
+        6 ( 0.00%)          return GrB_INVALID_VALUE;
+        .           
+       14 ( 0.00%)      if (!nonterms_count || !rules_count)
+        6 ( 0.00%)          return GrB_INVALID_VALUE;
+        .           
+       30 ( 0.00%)      bool t_empty_flags[nonterms_count]; // t_empty_flags[i] == true <=> T[i] is empty
+       30 ( 0.00%)      bool t_src_empty_flags[nonterms_count]; // t_src_empty_flags[i] == true <=> TSrc[i] is empty
+        .           
+       34 ( 0.00%)      if (!output || !rules || !adj_matrices || !src)
+        6 ( 0.00%)          return GrB_NULL_POINTER;
+        4 ( 0.00%)      if (src_count <= 0)
+        .                   return GrB_INVALID_VALUE;
+        .           
+        .               // Find null adjacency matrices
+        2 ( 0.00%)      bool found_null = false;
+   17,186 ( 0.00%)      for (int32_t i = 0; i < terms_count; i++) {
+   47,234 ( 0.00%)          if (adj_matrices[i] != NULL)
+    4,294 ( 0.00%)              continue;
+        .           
+        .                   if (!found_null) {
+        .                       ADD_TO_MSG("Adjacency matrices with these indices are null: ");
+        .                       ADD_TO_MSG("%d", i);
+        .                   } else {
+        .                       ADD_TO_MSG(", %d", i);
+        .                   }
+        .           
+        .                   found_null = true;
+        .               }
+        4 ( 0.00%)      if (found_null) {
+        .                   return GrB_NULL_POINTER;
+        .               }
+        .           
+       30 ( 0.00%)      GRB_TRY(GrB_Matrix_ncols(&n, adj_matrices[0]));
+      722 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+      100 ( 0.00%)  => ???:GrB_Matrix_ncols (2x)
+       10 ( 0.00%)      if (n < src_count) return GrB_INVALID_VALUE;
+        .           
+       24 ( 0.00%)      GrB_Scalar_new(&true_scalar, GrB_BOOL);
+      710 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+    1,160 ( 0.00%)  => ???:GrB_Scalar_new (2x)
+       20 ( 0.00%)      GrB_Scalar_setElement_BOOL(true_scalar, true);
+  345,685 ( 0.00%)  => ???:GrB_Scalar_setElement_BOOL (2x)
+      791 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        .           
+       34 ( 0.00%)      LG_TRY(LAGraph_Calloc((void **) &T, nonterms_count, sizeof(GrB_Matrix), msg));
+   54,204 ( 0.00%)  => /home/spisladqo/projects/c/spla/LAGraph/src/utility/LAGraph_Calloc.c:LAGraph_Calloc (2x)
+      716 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+       30 ( 0.00%)      LG_TRY(LAGraph_Calloc((void **) &TSrc, nonterms_count, sizeof(GrB_Matrix), msg));
+   52,644 ( 0.00%)  => /home/spisladqo/projects/c/spla/LAGraph/src/utility/LAGraph_Calloc.c:LAGraph_Calloc (2x)
+        .           
+       32 ( 0.00%)      GRB_TRY(GrB_Vector_new(&ones_vec, GrB_BOOL, n));
+      664 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+    1,477 ( 0.00%)  => ???:GrB_Vector_new (2x)
+       46 ( 0.00%)      GRB_TRY(GrB_Vector_assign_BOOL(ones_vec, GrB_NULL, GrB_NULL, true, GrB_ALL, n, NULL));
+      730 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+   10,825 ( 0.00%)  => ???:GrB_Vector_assign_BOOL (2x)
+       30 ( 0.00%)      GRB_TRY(GrB_Matrix_diag(&identity_matrix, ones_vec, 0));
+  164,978 ( 0.00%)  => ???:GrB_Matrix_diag (2x)
+      664 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        .           
+       30 ( 0.00%)      LG_TRY(LAGraph_Calloc((void **) &nnzs_T, nonterms_count, sizeof(GrB_Index), msg));
+   52,747 ( 0.00%)  => /home/spisladqo/projects/c/spla/LAGraph/src/utility/LAGraph_Calloc.c:LAGraph_Calloc (2x)
+       30 ( 0.00%)      LG_TRY(LAGraph_Calloc((void **) &nnzs_TSrc_B, nonterms_count, sizeof(GrB_Index), msg));
+   52,719 ( 0.00%)  => /home/spisladqo/projects/c/spla/LAGraph/src/utility/LAGraph_Calloc.c:LAGraph_Calloc (2x)
+       30 ( 0.00%)      LG_TRY(LAGraph_Calloc((void **) &nnzs_TSrc_C, nonterms_count, sizeof(GrB_Index), msg));
+   52,572 ( 0.00%)  => /home/spisladqo/projects/c/spla/LAGraph/src/utility/LAGraph_Calloc.c:LAGraph_Calloc (2x)
+        .           
+        .               // Create nonterms matrices
+   45,118 ( 0.00%)      for (int32_t i = 0; i < nonterms_count; i++) {
+  115,996 ( 0.00%)          GRB_TRY(GrB_Matrix_new(&T[i], GrB_BOOL, n, n));
+7,556,304 ( 0.03%)  => ???:GrB_Matrix_new (6,444x)
+      672 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+  115,992 ( 0.00%)          GRB_TRY(GrB_Matrix_new(&TSrc[i], GrB_BOOL, n, n));
+7,405,283 ( 0.03%)  => ???:GrB_Matrix_new (6,444x)
+   25,776 ( 0.00%)          t_empty_flags[i] = true;
+   25,776 ( 0.00%)          t_src_empty_flags[i] = true;
+        .               }
+        .           
+      458 ( 0.00%)      for (int32_t i = 0; i < src_count; i++) {
+    1,348 ( 0.00%)          GrB_Matrix_setElement(TSrc[0], true, src[i], src[i]);
+   31,020 ( 0.00%)  => ???:GrB_Matrix_setElement_INT32 (64x)
+      815 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        .               }
+        .           
+        4 ( 0.00%)      t_src_empty_flags[0] = false;
+        .           
+       30 ( 0.00%)      GRB_TRY(GrB_Matrix_dup(&MSrc, TSrc[0]));
+   19,915 ( 0.00%)  => ???:GrB_Matrix_dup (2x)
+      672 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+       28 ( 0.00%)      GRB_TRY(GrB_Matrix_new(&A, GrB_BOOL, n, n));
+    1,781 ( 0.00%)  => ???:GrB_Matrix_new (2x)
+       28 ( 0.00%)      GRB_TRY(GrB_Vector_new(&a, GrB_BOOL, n));
+    1,807 ( 0.00%)  => ???:GrB_Vector_new (2x)
+       28 ( 0.00%)      GRB_TRY(GrB_Matrix_new(&M, GrB_BOOL, n, n));
+    2,444 ( 0.00%)  => ???:GrB_Matrix_new (2x)
+        .           
+        .               // #ifdef DEBUG_CFL_REACHABILITY
+        .               // printf("MSrc:\n");
+        .               // PRINT_MATRIX(MSrc);
+        .               // #endif
+        .           
+        .               // Arrays for processing rules
+       38 ( 0.00%)      size_t eps_rules[rules_count], eps_rules_count = 0;   // [Variable -> eps]
+       38 ( 0.00%)      size_t term_rules[rules_count], term_rules_count = 0; // [Variable -> term]
+       38 ( 0.00%)      size_t bin_rules[rules_count], bin_rules_count = 0;   // [Variable -> AB]
+        .           
+        .               // Process rules
+        .               typedef struct {
+        .                   size_t count;
+        .                   size_t len_indices_str;
+        .                   char indices_str[LAGRAPH_MSG_LEN];
+        .               } rule_error_s;
+        .           
+       78 ( 0.00%)      rule_error_s term_err = {0};
+       78 ( 0.00%)      rule_error_s nonterm_err = {0};
+       78 ( 0.00%)      rule_error_s invalid_err = {0};
+        .           
+   34,378 ( 0.00%)      for (size_t i = 0; i < rules_count; i++) {
+   77,328 ( 0.00%)          LAGraph_rule_WCNF rule = rules[i];
+        .           
+   77,342 ( 0.00%)          bool is_rule_eps = rule.prod_A == -1 && rule.prod_B == -1;
+  120,268 ( 0.00%)          bool is_rule_term = rule.prod_A != -1 && rule.prod_B == -1;
+  120,276 ( 0.00%)          bool is_rule_bin = rule.prod_A != -1 && rule.prod_B != -1;
+        .           
+        .                   // Check that all rules are well-formed
+   77,328 ( 0.00%)          if (rule.nonterm < 0 || rule.nonterm >= nonterms_count) {
+        .                       ADD_INDEX_TO_ERROR_RULE(nonterm_err, i);
+        .                   }
+        .           
+        .                   // [Variable -> eps]
+   17,190 ( 0.00%)          if (is_rule_eps) {
+       12 ( 0.00%)              eps_rules[eps_rules_count++] = i;
+        .           
+        2 ( 0.00%)              continue;
+        .                   }
+        .           
+        .                   // [Variable -> term]
+   30,062 ( 0.00%)          if (is_rule_term) {
+   25,764 ( 0.00%)              term_rules[term_rules_count++] = i;
+        .           
+   38,646 ( 0.00%)              if (rule.prod_A < -1 || rule.prod_A >= terms_count) {
+        .                           ADD_INDEX_TO_ERROR_RULE(term_err, i);
+        .                       }
+        .           
+    8,588 ( 0.00%)              continue;
+        .                   }
+        .           
+        .                   // [Variable -> A B]
+   21,480 ( 0.00%)          if (is_rule_bin) {
+   25,776 ( 0.00%)              bin_rules[bin_rules_count++] = i;
+        .           
+   85,920 ( 0.00%)              if (rule.prod_A < -1 || rule.prod_A >= nonterms_count || rule.prod_B < -1 ||
+    4,296 ( 0.00%)                  rule.prod_B >= nonterms_count) {
+        .                           ADD_INDEX_TO_ERROR_RULE(nonterm_err, i);
+        .                       }
+        .           
+    4,296 ( 0.00%)              continue;
+        .                   }
+        .           
+        .                   // [Variable -> _ B]
+        .                   ADD_INDEX_TO_ERROR_RULE(invalid_err, i);
+        .               }
+        .           
+       14 ( 0.00%)      if (term_err.count + nonterm_err.count + invalid_err.count > 0) {
+        .                   ADD_TO_MSG("Count of invalid rules: %ld.\n",
+        .                              term_err.count + nonterm_err.count + invalid_err.count);
+        .           
+        .                   if (nonterm_err.count > 0) {
+        .                       ADD_TO_MSG("Non-terminals must be in range [0, nonterms_count). ");
+        .                       ADD_TO_MSG("indices of invalid rules: %s\n", nonterm_err.indices_str)
+        .                   }
+        .                   if (term_err.count > 0) {
+-- line 309 ----------------------------------------
+-- line 315 ----------------------------------------
+        .                       ADD_TO_MSG("indices of invalid rules: %.120s\n", invalid_err.indices_str)
+        .                   }
+        .           
+        .                   LG_FREE_ALL;
+        .                   return GrB_INVALID_VALUE;
+        .               }
+        .           
+        .               // Rule [Variable -> term]
+   30,068 ( 0.00%)      for (size_t i = 0; i < term_rules_count; i++) {
+   47,234 ( 0.00%)          LAGraph_rule_WCNF term_rule = rules[term_rules[i]];
+        .           
+  154,588 ( 0.00%)          GxB_eWiseUnion(
+62,881,854 ( 0.24%)  => ???:GxB_Matrix_eWiseUnion (4,294x)
+      771 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        .                       T[term_rule.nonterm], GrB_NULL, GrB_NULL, GxB_PAIR_BOOL,
+        .                       T[term_rule.nonterm], true_scalar, adj_matrices[term_rule.prod_A], true_scalar, GrB_NULL
+        .                   );
+        .           
+   17,176 ( 0.00%)          t_empty_flags[term_rule.nonterm] = false;
+        .           
+        .                   // #ifdef DEBUG_CFL_REACHABILITY
+        .                   // GxB_Matrix_iso(&iso_flag, T[term_rule.nonterm]);
+        .                   // printf("[TERM] eWiseUnion: NONTERM: %d (ISO: %d)\n", term_rule.nonterm, iso_flag);
+        .                   // #endif
+        .               }
+        .           
+        .               // Rule [Variable -> eps]
+       24 ( 0.00%)      for (size_t i = 0; i < eps_rules_count; i++) {
+       22 ( 0.00%)          LAGraph_rule_WCNF eps_rule = rules[eps_rules[i]];
+        .           
+       64 ( 0.00%)          GxB_eWiseUnion (
+12,346,869 ( 0.05%)  => ???:GxB_Matrix_eWiseUnion (2x)
+        .                       T[eps_rule.nonterm],GrB_NULL,GxB_PAIR_BOOL,GxB_PAIR_BOOL,
+        .                       T[eps_rule.nonterm],true_scalar,identity_matrix,true_scalar,GrB_NULL
+        .                   );
+        .                   
+        8 ( 0.00%)          t_empty_flags[eps_rule.nonterm] = false;
+        .           
+        .                   // #ifdef DEBUG_CFL_REACHABILITY
+        .                   // GxB_Matrix_iso(&iso_flag, T[eps_rule.nonterm]);
+        .                   // printf("[EPS] eWiseUnion: NONTERM: %d (ISO: %d)\n",
+        .                   //         eps_rule.nonterm, iso_flag);
+        .                   // #endif
+        .               }
+        .           
+        .               // Rule [Variable -> Variable1 Variable2]
+        2 ( 0.00%)      bool changed = true;
+      110 ( 0.00%)      while (changed) {
+       52 ( 0.00%)          changed = false;
+  893,984 ( 0.00%)          for (size_t i = 0; i < bin_rules_count; i++) {
+1,228,656 ( 0.00%)              LAGraph_rule_WCNF bin_rule = rules[bin_rules[i]];
+        .           
+3,574,276 ( 0.01%)              GRB_TRY(GrB_mxm(M, GrB_NULL, GrB_NULL, GxB_ANY_PAIR_BOOL,
+7,212,841,898 (27.01%)  => ???:GrB_mxm (111,696x)
+      616 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        .                                   TSrc[bin_rule.nonterm], T[bin_rule.prod_A], GrB_NULL));
+        .           
+1,340,040 ( 0.01%)              GrB_BinaryOp acc_op = t_empty_flags[bin_rule.nonterm] ? GrB_NULL : GxB_ANY_BOOL;
+3,462,576 ( 0.01%)              GRB_TRY(GrB_mxm(T[bin_rule.nonterm], GrB_NULL, acc_op, GxB_ANY_PAIR_BOOL,
+2,603,306,730 ( 9.75%)  => ???:GrB_mxm (111,696x)
+        .                                   M, T[bin_rule.prod_B], GrB_NULL))
+        .           
+4,132,756 ( 0.02%)              GRB_TRY(GrB_eWiseAdd(TSrc[bin_rule.prod_A], GrB_NULL, GrB_NULL, GxB_ANY_BOOL,
+9,408,536,888 (35.23%)  => ???:GrB_Matrix_eWiseAdd_BinaryOp (111,696x)
+      806 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+        .                                   TSrc[bin_rule.prod_A], TSrc[bin_rule.nonterm], GrB_NULL));
+        .           
+        .                       // Update source vertices matrix to find appropriate paths only
+        .                       // M[i, j] == 1 => A[j, j] == 1
+2,457,316 ( 0.01%)              GRB_TRY(GrB_vxm(a, GrB_NULL, GrB_NULL, GxB_ANY_PAIR_BOOL, ones_vec, M, GrB_NULL));
+1,400,581,348 ( 5.25%)  => ???:GrB_vxm (111,696x)
+      636 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+1,452,048 ( 0.01%)              GRB_TRY(GrB_Matrix_diag(&A, a, 0));
+543,231,025 ( 2.03%)  => ???:GrB_Matrix_diag (111,696x)
+        .           
+3,574,272 ( 0.01%)              GRB_TRY(GrB_eWiseAdd(TSrc[bin_rule.prod_B], GrB_NULL, GrB_NULL, GxB_ANY_BOOL,
+1,419,942,586 ( 5.32%)  => ???:GrB_Matrix_eWiseAdd_BinaryOp (111,696x)
+        .                           TSrc[bin_rule.prod_B], A, GrB_NULL));
+        .           
+        .                       // #ifdef DEBUG_CFL_REACHABILITY
+        .                       // printf("After TSrc^C = TSrc^c + A\n");
+        .                       // printf("TSrc^C:\n");
+        .                       // PRINT_MATRIX(TSrc[bin_rule.prod_B])
+        .                       // #endif
+        .           
+-- line 387 ----------------------------------------
+-- line 390 ----------------------------------------
+        .                       // printf("[TERM1 TERM2] MULTIPLY, S: %d, A: %d, B: %d, "
+        .                       //        "I: %ld (ISO: %d)\n",
+        .                       //        bin_rule.nonterm, bin_rule.prod_A, bin_rule.prod_B, i, iso_flag);
+        .                       // #endif
+        .           
+        .                       // Check if any of the matrices changed. If not, job is done.
+        .                       GrB_Index nnz_T, nnz_TSrc_B, nnz_TSrc_C;
+        .           
+1,898,836 ( 0.01%)              GRB_TRY(GrB_Matrix_nvals(&nnz_T, T[bin_rule.nonterm]));
+302,447,123 ( 1.13%)  => ???:GrB_Matrix_nvals (111,696x)
+      716 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+1,898,832 ( 0.01%)              GRB_TRY(GrB_Matrix_nvals(&nnz_TSrc_B, TSrc[bin_rule.prod_A]));
+12,956,736 ( 0.05%)  => ???:GrB_Matrix_nvals (111,696x)
+1,898,832 ( 0.01%)              GRB_TRY(GrB_Matrix_nvals(&nnz_TSrc_C, TSrc[bin_rule.prod_B]));
+12,956,736 ( 0.05%)  => ???:GrB_Matrix_nvals (111,696x)
+        .                       
+  335,816 ( 0.00%)              if (nnz_T != 0) t_empty_flags[bin_rule.nonterm] = false;
+1,116,960 ( 0.00%)              if (nnz_TSrc_B != 0) t_src_empty_flags[bin_rule.prod_A] = false;
+  335,816 ( 0.00%)              if (nnz_TSrc_C != 0) t_src_empty_flags[bin_rule.prod_B] = false;
+        .           
+  731,256 ( 0.00%)              changed = changed || (nnzs_T[bin_rule.nonterm] != nnz_T);
+  730,992 ( 0.00%)              changed = changed || (nnzs_TSrc_B[bin_rule.prod_A] != nnz_TSrc_B);
+  730,936 ( 0.00%)              changed = changed || (nnzs_TSrc_C[bin_rule.prod_B] != nnz_TSrc_C);
+        .           
+  781,872 ( 0.00%)              nnzs_T[bin_rule.nonterm] = nnz_T;
+  781,872 ( 0.00%)              nnzs_TSrc_B[bin_rule.prod_A] = nnz_TSrc_B;
+  781,872 ( 0.00%)              nnzs_TSrc_C[bin_rule.prod_B] = nnz_TSrc_C;
+        .                   }
+        .               }
+        .           
+        .               // #ifdef DEBUG_CFL_REACHABILITY
+        .               // printf("Before MSrc = MSrc * T^S\n");
+        .               // printf("MSrc:\n");
+        .               // PRINT_MATRIX(MSrc)
+        .               // printf("T^S:\n");
+        .               // PRINT_MATRIX(T[0]);
+        .               // #endif
+        .           
+       46 ( 0.00%)      GRB_TRY(GrB_mxm(MSrc, GrB_NULL, GrB_NULL, GxB_ANY_PAIR_BOOL,
+   68,345 ( 0.00%)  => ???:GrB_mxm (2x)
+        .                       MSrc, T[0], GrB_NULL));
+        .           
+        .               // #ifdef DEBUG_CFL_REACHABILITY
+        .               // printf("After MSrc = MSrc * T^S\n");
+        .               // printf("MSrc, output:\n");
+        .               // PRINT_MATRIX(MSrc)
+        .               // #endif
+        .           
+       24 ( 0.00%)      GRB_TRY(GrB_Matrix_dup(output, MSrc));
+    5,416 ( 0.00%)  => ???:GrB_Matrix_dup (2x)
+        .           
+  161,336 ( 0.00%)      LG_FREE_ALL;
+15,585,767 ( 0.06%)  => ???:GrB_Matrix_free (12,888x)
+    2,073 ( 0.00%)  => /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (3x)
+    9,061 ( 0.00%)  => /home/spisladqo/projects/c/spla/LAGraph/src/utility/LAGraph_Free.c:LAGraph_Free (22x)
+    1,132 ( 0.00%)  => ???:GrB_Scalar_free (2x)
+       10 ( 0.00%)      return GrB_SUCCESS;
+       18 ( 0.00%)  }
+       19 ( 0.00%)  => ???:__gcov_init (1x)
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/alloc.c
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/config/linux/bar.c
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/config/linux/bar.h
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/config/linux/ptrlock.h
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/config/linux/x86/futex.h
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/config/posix/pool.h
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/iter.c
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/libgomp.h
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/loop.c
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/parallel.c
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/priority_queue.h
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/task.c
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/team.c
+  /usr/src/debug/gcc-14.3.1-1.fc41.x86_64/obj-x86_64-redhat-linux/x86_64-redhat-linux/libgomp/../../../libgomp/work.c
+  /usr/src/debug/glibc-2.40-27.fc41.x86_64/elf/../sysdeps/x86_64/tls_get_addr.S
+  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/arena.c
+  /usr/src/debug/glibc-2.40-27.fc41.x86_64/malloc/malloc.c
+  /usr/src/debug/glibc-2.40-27.fc41.x86_64/stdlib/../stdlib/strtol_l.c
+  /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+  /usr/src/debug/glibc-2.40-27.fc41.x86_64/string/../sysdeps/x86_64/multiarch/strcmp-avx2.S
+
+--------------------------------------------------------------------------------
+Ir                     
+--------------------------------------------------------------------------------
+2,366,892,452 ( 8.86%)  events annotated
+

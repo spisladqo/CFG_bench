@@ -5,7 +5,7 @@ INCLUDE_FLAGS = -I/usr/local/include/suitesparse -I./
 
 build: test.c parser.c
 	gcc test.c parser.c ${ALGO} ${LIB_FLAGS} ${INCLUDE_FLAGS} \
- -o test -O2 -Wextra -Wno-sign-compare -pedantic \
+ -o test -O2 -Wextra -Wno-sign-compare -pedantic -pg \
 
 build-debug: test.c parser.c
 	gcc test.c parser.c ${ALGO} ${LIB_FLAGS} ${INCLUDE_FLAGS} \
