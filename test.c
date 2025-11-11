@@ -18,7 +18,7 @@
 #define run_algorithm()                                                        \
     LAGraph_CFL_reachability_multsrc_fast(outputs, adj_matrices, src, src_count, grammar.terms_count,       \
                              grammar.nonterms_count, grammar.rules,            \
-                             grammar.rules_count, msg, 3)
+                             grammar.rules_count, msg, 1 )
 
 
 #define check_error(error)                                                     \
@@ -103,18 +103,18 @@ char *configs_java[] = {
     NULL};
 
 char *configs_c_alias[] = {
-    "data/graphs/c_alias/init.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/mm.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/ipc.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/lib.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/block.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/arch.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/crypto.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/security.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/sound.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/fs.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/net.g,data/grammars/c_alias.cnf",
-    "data/graphs/c_alias/drivers.g,data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/init.g,data/grammars/c_alias_rewritten.cnf",
+    "data/graphs/c_alias/mm.g,data/grammars/c_alias_rewritten.cnf",
+    "data/graphs/c_alias/ipc.g,data/grammars/c_alias_rewritten.cnf",
+    "data/graphs/c_alias/lib.g,data/grammars/c_alias_rewritten.cnf",
+    "data/graphs/c_alias/block.g,data/grammars/c_alias_rewritten.cnf",
+    "data/graphs/c_alias/arch.g,data/grammars/c_alias_rewritten.cnf",
+    "data/graphs/c_alias/crypto.g,data/grammars/c_alias_rewritten.cnf",
+    "data/graphs/c_alias/security.g,data/grammars/c_alias_rewritten.cnf",
+    "data/graphs/c_alias/sound.g,data/grammars/c_alias_rewritten.cnf",
+    "data/graphs/c_alias/fs.g,data/grammars/c_alias_rewritten.cnf",
+    "data/graphs/c_alias/net.g,data/grammars/c_alias_rewritten.cnf",
+    "data/graphs/c_alias/drivers.g,data/grammars/c_alias_rewritten.cnf",
     NULL};
 
 char *configs_vf[] = {"data/graphs/vf/xz.g,data/grammars/vf.cnf",
