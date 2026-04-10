@@ -1,13 +1,13 @@
 #include "adapter_CFL_adv.h"
 #include "GraphBLAS.h"
 #include "LAGraph.h"
-#include "parser.h"
+#include "../parser.h"
 
 #define TRY(GrB_method)                                                                                                \
     {                                                                                                                  \
         GrB_Info LG_GrB_Info = GrB_method;                                                                             \
         if (LG_GrB_Info < GrB_SUCCESS) {                                                                               \
-            fprintf(stderr, "LAGraph failure (file %s, line %d): (%d, msg: ) \n", __FILE__, __LINE__, LG_GrB_Info,     \
+            fprintf(stderr, "LAGraph failure (file %s, line %d): (%d, msg: %s) \n", __FILE__, __LINE__, LG_GrB_Info,     \
                     state.msg);                                                                                        \
             return (LG_GrB_Info);                                                                                      \
         }                                                                                                              \
@@ -110,7 +110,10 @@ static GrB_Matrix *get_matrices_from_graph(Graph graph, size_t *map_base_indecie
 }
 
 // initialize LAGraph\GraphBLAS
-static GrB_Info adapter_CFL_adv_setup() { TRY(LAGr_Init(GrB_NONBLOCKING, malloc, NULL, NULL, free, state.msg)); }
+static GrB_Info adapter_CFL_adv_setup() {
+    TRY(LAGr_Init(GrB_NONBLOCKING, malloc, NULL, NULL, free, state.msg));
+    return GrB_SUCCESS;
+}
 
 // inner structure to pass data to prepare function
 typedef CFL_adv_PrepareData PrepareData;
@@ -193,6 +196,7 @@ static GrB_Info adapter_CFL_adv_prepare(ParserResult parser_result, void *prepar
 // this should be called before each run of the algorithm
 static GrB_Info adapter_CFL_adv_init_outputs() {
     TRY(LAGraph_Calloc((void **)&state.outputs, state.symbols_amount, sizeof(GrB_Matrix), state.msg));
+    return GrB_SUCCESS;
 }
 
 // run the algorithm
@@ -201,6 +205,7 @@ static GrB_Info adapter_CFL_adv_init_outputs() {
 static GrB_Info adapter_CFL_adv_run() {
     TRY(LAGraph_CFL_reachability_adv(state.outputs, state.adj_matrices, state.symbols_amount, state.grammar.rules,
                                      state.grammar.rules_count, state.msg, state.optimizations));
+    return GrB_SUCCESS;
 }
 
 // check if the result of the algorithm is valid
@@ -255,7 +260,10 @@ static GrB_Info adapter_CFL_adv_cleanup() {
 }
 
 // free LAGraph\GraphBLAS resources
-static GrB_Info adapter_CFL_adv_teardown() { TRY(LAGraph_Finalize(state.msg)); }
+static GrB_Info adapter_CFL_adv_teardown() {
+    TRY(LAGraph_Finalize(state.msg));
+    return GrB_SUCCESS;
+}
 
 // get the methods of the adapter
 AdapterMethods adapter_CFL_adv_get_methods() {

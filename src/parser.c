@@ -412,7 +412,7 @@ ParserResult parser(config_row config_i) {
     _grammar.start_nonterm = 0;
     // printf("OK\n");
 
-    // printf("Process graph...");
+    printf("Process graph...");
     FILE *graph_file = fopen(config_graph, "r");
     Graph graph = process_graph(graph_file, &list);
     // printf("OK\n");

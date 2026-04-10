@@ -6,6 +6,7 @@ ALGO_I=-I../LAGraph/src/utility
 ALGO_OBJ = LAGraph_CFL_reachability_advanced.o
 ALGO_OPT_OBJ=LAGraph_CFL_optimized_matrix_opt.o
 ALGO_OBJ_V = LAGraph_CFL_reachability_advanced_V.o
+SRC_FILES = src/test.c src/parser.c src/adapters/adapter_CFL_adv.c src/symbol_list.c
 
 all: bench_compile_v
 
@@ -34,21 +35,21 @@ run: test.c parser.c
  -o test -Wextra -Wno-sign-compare -pedantic -fsanitize=undefined -DDEBUG_parser \
  && ./test
 
-bench: src/test.c src/parser.c
-	gcc src/test.c src/parser.c -O2 ${LIB_FLAGS} ${INCLUDE_FLAGS} -o build/test
+bench: $(SRC_FILES)
+	gcc $(SRC_FILES) -O2 ${LIB_FLAGS} ${INCLUDE_FLAGS} -o build/test
 
-bench_compile: src/test.c src/parser.c ${ALGO_PATH} ${ALGO_OPT_PATH}
-	gcc src/test.c src/parser.c ${ALGO_PATH} ${ALGO_OPT_PATH} ${ALGO_I} -O2 ${LIB_FLAGS} ${INCLUDE_FLAGS} -o build/test
+bench_compile: $(SRC_FILES) ${ALGO_PATH} ${ALGO_OPT_PATH}
+	gcc $(SRC_FILES) ${ALGO_PATH} ${ALGO_OPT_PATH} ${ALGO_I} -O2 ${LIB_FLAGS} ${INCLUDE_FLAGS} -o build/test
 
-bench_debug: src/test.c src/parser.c ${ALGO_PATH} ${ALGO_OPT_PATH}
-	gcc src/test.c src/parser.c ${ALGO_PATH} ${ALGO_OPT_PATH} ${ALGO_I} -O0 -g ${LIB_FLAGS} ${INCLUDE_FLAGS} -o build/test
+bench_debug: $(SRC_FILES) ${ALGO_PATH} ${ALGO_OPT_PATH}
+	gcc $(SRC_FILES) ${ALGO_PATH} ${ALGO_OPT_PATH} ${ALGO_I} -O0 -g ${LIB_FLAGS} ${INCLUDE_FLAGS} -o build/test
 
 test_compile: test.c parser.c ${ALGO_OBJ}
 	gcc test.c parser.c ${ALGO_OBJ} -O2 ${ALGO} ${LIB_FLAGS} ${INCLUDE_FLAGS} ${ALGO_I} \
 		-o test && ./test -${FLAGS}t
 
-bench_compile_v: test.c parser.c ${ALGO_OBJ_V}
-	gcc test.c parser.c ${ALGO_OBJ_V} -O2 -g ${ALGO} ${LIB_FLAGS} ${INCLUDE_FLAGS} ${ALGO_I} \
+bench_compile_v: $(SRC_FILES) ${ALGO_OBJ_V}
+	gcc $(SRC_FILES) ${ALGO_OBJ_V} -O2 -g ${ALGO} ${LIB_FLAGS} ${INCLUDE_FLAGS} ${ALGO_I} \
 		-o test && ./test -${FLAGS}
 
 bench_compile_v_leak: test.c parser.c

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "parser.h"
+#include "../parser.h"
 #include <GraphBLAS.h>
 #include <LAGraph.h>
 

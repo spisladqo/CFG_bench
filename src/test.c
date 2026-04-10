@@ -1,5 +1,5 @@
-#include "adapter_CFL_adv.h"
-#include "parser.h"
+#include "src/adapters/adapter_CFL_adv.h"
+#include "src/parser.h"
 #include <GraphBLAS.h>
 #include <LAGraph.h>
 #include <LAGraphX.h>
@@ -150,7 +150,16 @@ int main(int argc, char **argv) {
         printf("No algorithm choosed, using CFL_adv by default\n");
     }
 
+    // printf("adapter.setup function pointer: %p\n", (void*)adapter.setup);
+    // fflush(stdout);
     TRY(adapter.setup());
+    // GrB_Info info = adapter.setup();
+    // printf("adapter.setup() returned: %d (0x%x)\n", info, info);
+    // fflush(stdout);
+    // if (info < GrB_SUCCESS) {
+    //     fprintf(stderr, "Setup failed with code %d\n", info);
+    //     return info;
+    // }
 
     if (!is_config) {
         fprintf(stderr, "Need to choose config by flag -c [config file]\n");
