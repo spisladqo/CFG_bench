@@ -1,0 +1,23 @@
+gcc test.c parser.c -O2  -lgraphblas -llagraph -llagraphx -I/usr/local/include/suitesparse -I./ \
+	-o test && ./test
+Start bench
+CONFIG: data/graphs/rdf/go_hierarchy.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+src_count: 450
+	0.259s	0.236s	0.327s	0.226s	0.220s
+	Time elapsed (avg): 0.253741 seconds. Result: 31238 (return code 0) ()
+
+CONFIG: data/graphs/rdf/eclass.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+src_count: 450
+	0.011s	0.011s	0.011s	0.011s	0.011s
+	Time elapsed (avg): 0.011014 seconds. Result: 318 (return code 0) ()
+
+CONFIG: data/graphs/rdf/go.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+src_count: 5829
+	4.111s	3.848s	3.833s	4.260s	4.109s
+	Time elapsed (avg): 4.032285 seconds. Result: 99499 (return code 0) ()
+
+CONFIG: data/graphs/rdf/taxonomy_hierarchy.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+src_count: 5829
+	13.020s	13.547s	12.935s	14.381s	13.067s
+	Time elapsed (avg): 13.389948 seconds. Result: 59543 (return code 0) ()
+

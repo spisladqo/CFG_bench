@@ -1,0 +1,61 @@
+Start bench
+CONFIG: data/graphs/c_alias/init.g,data/grammars/c_alias_rewritten.cnf
+src_count: 24462
+	7.086s	6.871s	6.850s	6.832s	6.835s	6.839s	6.838s	6.832s	6.832s	6.828s
+	Time elapsed (avg): 6.864132 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/mm.g,data/grammars/c_alias_rewritten.cnf
+src_count: 25382
+	9.792s	9.771s	9.817s	10.038s	9.798s	9.869s	9.942s	10.278s	10.437s	10.994s
+	Time elapsed (avg): 10.073496 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/ipc.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34010
+	11.827s	12.541s	11.998s	11.903s	11.924s	11.122s	11.073s	11.401s	11.232s	11.018s
+	Time elapsed (avg): 11.603944 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/lib.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34013
+	13.700s	13.801s	12.847s	12.845s	13.356s	13.774s	12.909s	14.019s	13.810s	13.703s
+	Time elapsed (avg): 13.476281 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/block.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34232
+	12.900s	12.659s	12.389s	12.162s	12.242s	11.938s	12.457s	12.298s	12.077s	12.900s
+	Time elapsed (avg): 12.402172 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/arch.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34484
+	12.037s	11.644s	12.182s	12.711s	12.503s	12.222s	11.860s	11.909s	11.117s	12.188s
+	Time elapsed (avg): 12.037478 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/crypto.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34649
+	12.710s	12.752s	12.348s	12.914s	12.671s	12.387s	12.694s	12.396s	13.582s	12.460s
+	Time elapsed (avg): 12.691435 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/security.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34799
+	13.636s	13.610s	13.428s	13.474s	13.538s	14.295s	14.431s	13.997s	13.895s	14.605s
+	Time elapsed (avg): 13.890960 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/sound.g,data/grammars/c_alias_rewritten.cnf
+src_count: 35288
+	12.433s	11.855s	11.817s	11.793s	11.794s	11.777s	11.759s	11.822s	12.452s	13.527s
+	Time elapsed (avg): 12.102827 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/fs.g,data/grammars/c_alias_rewritten.cnf
+src_count: 41774
+	16.318s	16.484s	16.430s	15.506s	16.027s	16.452s	15.239s	15.771s	15.350s	14.247s
+	Time elapsed (avg): 15.782371 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/net.g,data/grammars/c_alias_rewritten.cnf
+src_count: 40394
+	14.368s	14.381s	14.630s	14.410s	15.140s	14.803s	14.773s	14.756s	14.766s	14.784s
+	Time elapsed (avg): 14.681034 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/drivers.g,data/grammars/c_alias_rewritten.cnf
+src_count: 42738
+	18.465s	18.728s	18.327s	18.567s	18.524s	18.139s	18.175s	18.441s	18.033s	18.106s
+	Time elapsed (avg): 18.350675 seconds. Result: 0 (return code 0) ()
+

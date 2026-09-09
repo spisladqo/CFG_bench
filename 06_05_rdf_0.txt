@@ -1,0 +1,61 @@
+Start bench
+CONFIG: data/graphs/rdf/go_hierarchy.g,old_data/grammars/nested_parentheses_subClassOf_type.cnf
+src path:        ../CFPQ_PyAlgo/experiments/samples/go_hierarchy_smpl_1%_1.txt
+src_count:       450
+outpus:          (nil)
+adj_matrices:    0x168fb4f0
+terms_count:     4
+nonterms_count:  7
+rules:           0x168fb440
+rules_count:     10
+	0.266s	0.265s	0.266s
+	Time elapsed (avg): 0.265520 seconds. Result: 42682 (return code 0) ()
+
+CONFIG: data/graphs/rdf/taxonomy.g,old_data/grammars/nested_parentheses_subClassOf_type.cnf
+src path:        ../CFPQ_PyAlgo/experiments/samples/taxonomy_smpl_1%_1.txt
+src_count:       57283
+outpus:          (nil)
+adj_matrices:    0x168fcf50
+terms_count:     4
+nonterms_count:  7
+rules:           0x16907fb0
+rules_count:     10
+	5.302s	5.091s	5.108s
+	Time elapsed (avg): 5.166803 seconds. Result: 57283 (return code 0) ()
+
+CONFIG: data/graphs/rdf/eclass.g,old_data/grammars/nested_parentheses_subClassOf_type.cnf
+src path:        ../CFPQ_PyAlgo/experiments/samples/eclass_smpl_1%_1.txt
+src_count:       2391
+outpus:          (nil)
+adj_matrices:    0x1724be80
+terms_count:     4
+nonterms_count:  7
+rules:           0x16909910
+rules_count:     10
+	0.070s	0.071s	0.071s
+	Time elapsed (avg): 0.070475 seconds. Result: 4781 (return code 0) ()
+
+CONFIG: data/graphs/rdf/go.g,old_data/grammars/nested_parentheses_subClassOf_type.cnf
+src path:        ../CFPQ_PyAlgo/experiments/samples/go_smpl_1%_1.txt
+src_count:       5829
+outpus:          (nil)
+adj_matrices:    0x16902230
+terms_count:     4
+nonterms_count:  7
+rules:           0x16ed14b0
+rules_count:     10
+	0.939s	0.941s	0.944s
+	Time elapsed (avg): 0.941073 seconds. Result: 103995 (return code 0) ()
+
+CONFIG: data/graphs/rdf/taxonomy_hierarchy.g,old_data/grammars/nested_parentheses_subClassOf_type.cnf
+src path:        ../CFPQ_PyAlgo/experiments/samples/taxonomy_hierarchy_smpl_1%_1.txt
+src_count:       21126
+outpus:          (nil)
+adj_matrices:    0x16964460
+terms_count:     4
+nonterms_count:  7
+rules:           0x16c757c0
+rules_count:     10
+	12.383s	12.414s	12.540s
+	Time elapsed (avg): 12.445794 seconds. Result: 584362 (return code 0) ()
+

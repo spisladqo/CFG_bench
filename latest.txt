@@ -1,0 +1,1085 @@
+spisladqo@fedora:~/projects/c/spla/CFG_bench$ ./test
+Start bench
+CONFIG: data/graphs/c_alias/init.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/init_smpl_5%_0.txt
+sample src_count: 122311
+
+time of operation 0: 7.473203
+time of operation 1: 3.772937
+time of operation 2: 9.097846
+time of operation 3: 7.655440
+time of operation 4: 2.602136
+time of operation 5: 0.000882
+time of operation 6: 0.700904
+time of operation 7: 5.902328
+Time elapsed: 37.398438 seconds. Result: 282494 (return code 0)
+
+time of operation 0: 7.428753
+time of operation 1: 3.770186
+time of operation 2: 9.188872
+time of operation 3: 7.805052
+time of operation 4: 2.696080
+time of operation 5: 0.000932
+time of operation 6: 0.680291
+time of operation 7: 5.969607
+Time elapsed: 37.726578 seconds. Result: 282494 (return code 0)
+
+time of operation 0: 7.445242
+time of operation 1: 3.798830
+time of operation 2: 9.181858
+time of operation 3: 7.912785
+time of operation 4: 2.776743
+time of operation 5: 0.001021
+time of operation 6: 0.687700
+time of operation 7: 5.823447
+Time elapsed: 37.812911 seconds. Result: 282494 (return code 0)
+
+time of operation 0: 7.426331
+time of operation 1: 3.841000
+time of operation 2: 9.215151
+time of operation 3: 7.831666
+time of operation 4: 2.788234
+time of operation 5: 0.001018
+time of operation 6: 0.682474
+time of operation 7: 5.880838
+Time elapsed: 37.894103 seconds. Result: 282494 (return code 0)
+
+time of operation 0: 7.448164
+time of operation 1: 3.771917
+time of operation 2: 9.200597
+time of operation 3: 7.815630
+time of operation 4: 2.732499
+time of operation 5: 0.001065
+time of operation 6: 0.680075
+time of operation 7: 5.890384
+Time elapsed: 37.730211 seconds. Result: 282494 (return code 0)
+
+time of operation 0: 7.469942
+time of operation 1: 3.812661
+time of operation 2: 9.206245
+time of operation 3: 7.791799
+time of operation 4: 2.734671
+time of operation 5: 0.000991
+time of operation 6: 0.709909
+time of operation 7: 5.908771
+Time elapsed: 37.818125 seconds. Result: 282494 (return code 0)
+
+time of operation 0: 7.563359
+time of operation 1: 3.827888
+time of operation 2: 9.169232
+time of operation 3: 7.757972
+time of operation 4: 2.741505
+time of operation 5: 0.001031
+time of operation 6: 0.699979
+time of operation 7: 5.904438
+Time elapsed: 37.852322 seconds. Result: 282494 (return code 0)
+
+time of operation 0: 7.449250
+time of operation 1: 3.822550
+time of operation 2: 9.262037
+time of operation 3: 7.845970
+time of operation 4: 2.731077
+time of operation 5: 0.001044
+time of operation 6: 0.706021
+time of operation 7: 5.940075
+Time elapsed: 37.944513 seconds. Result: 282494 (return code 0)
+
+time of operation 0: 7.460969
+time of operation 1: 3.800939
+time of operation 2: 9.221756
+time of operation 3: 7.932151
+time of operation 4: 2.833060
+time of operation 5: 0.001080
+time of operation 6: 0.680271
+time of operation 7: 5.827349
+Time elapsed: 37.948590 seconds. Result: 282494 (return code 0)
+
+time of operation 0: 7.372260
+time of operation 1: 3.803685
+time of operation 2: 9.311768
+time of operation 3: 8.024634
+time of operation 4: 2.815227
+time of operation 5: 0.003103
+time of operation 6: 0.715092
+time of operation 7: 5.809476
+Time elapsed: 38.048714 seconds. Result: 282494 (return code 0)
+
+	Time elapsed (avg): 37.817451 seconds, result: 282494
+std: 0.168931
+
+CONFIG: data/graphs/c_alias/mm.g,data/grammars/c_alias.cnf
+Time elapsed: 0.000001 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+
+	Time elapsed (avg): 0.000000 seconds, result: 0
+std: 0.000000
+
+CONFIG: data/graphs/c_alias/ipc.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/ipc_smpl_5%_0.txt
+sample src_count: 170051
+
+time of operation 0: 9.805609
+time of operation 1: 4.987316
+time of operation 2: 12.689334
+time of operation 3: 10.605897
+time of operation 4: 2.676048
+time of operation 5: 0.000993
+time of operation 6: 0.881632
+time of operation 7: 8.023974
+Time elapsed: 49.926429 seconds. Result: 395224 (return code 0)
+
+time of operation 0: 9.747097
+time of operation 1: 4.956942
+time of operation 2: 12.680670
+time of operation 3: 10.574499
+time of operation 4: 2.620583
+time of operation 5: 0.000967
+time of operation 6: 0.846453
+time of operation 7: 8.118169
+Time elapsed: 49.857286 seconds. Result: 395224 (return code 0)
+
+time of operation 0: 9.727219
+time of operation 1: 5.009303
+time of operation 2: 12.618133
+time of operation 3: 10.704851
+time of operation 4: 2.664507
+time of operation 5: 0.001042
+time of operation 6: 0.917810
+time of operation 7: 7.951361
+Time elapsed: 49.864963 seconds. Result: 395224 (return code 0)
+
+time of operation 0: 9.680222
+time of operation 1: 5.061619
+time of operation 2: 12.526565
+time of operation 3: 10.653394
+time of operation 4: 2.683160
+time of operation 5: 0.003508
+time of operation 6: 0.853180
+time of operation 7: 8.006674
+Time elapsed: 49.729623 seconds. Result: 395224 (return code 0)
+
+time of operation 0: 9.824010
+time of operation 1: 4.998514
+time of operation 2: 12.641374
+time of operation 3: 10.653165
+time of operation 4: 2.716392
+time of operation 5: 0.000985
+time of operation 6: 0.816613
+time of operation 7: 7.950440
+Time elapsed: 49.865015 seconds. Result: 395224 (return code 0)
+
+time of operation 0: 9.765417
+time of operation 1: 4.978521
+time of operation 2: 12.666770
+time of operation 3: 10.526315
+time of operation 4: 2.685399
+time of operation 5: 0.001093
+time of operation 6: 0.841889
+time of operation 7: 8.093333
+Time elapsed: 49.816889 seconds. Result: 395224 (return code 0)
+
+time of operation 0: 9.821454
+time of operation 1: 5.012755
+time of operation 2: 12.555408
+time of operation 3: 10.587179
+time of operation 4: 2.698604
+time of operation 5: 0.001072
+time of operation 6: 0.829206
+time of operation 7: 8.159339
+Time elapsed: 49.913514 seconds. Result: 395224 (return code 0)
+
+time of operation 0: 9.815306
+time of operation 1: 5.002869
+time of operation 2: 12.662868
+time of operation 3: 10.589455
+time of operation 4: 2.666476
+time of operation 5: 0.001079
+time of operation 6: 0.852508
+time of operation 7: 8.099629
+Time elapsed: 49.954702 seconds. Result: 395224 (return code 0)
+
+time of operation 0: 9.761623
+time of operation 1: 4.996600
+time of operation 2: 12.571565
+time of operation 3: 10.601006
+time of operation 4: 2.646300
+time of operation 5: 0.001010
+time of operation 6: 0.869578
+time of operation 7: 8.029116
+Time elapsed: 49.742359 seconds. Result: 395224 (return code 0)
+
+time of operation 0: 9.656164
+time of operation 1: 5.009840
+time of operation 2: 12.605305
+time of operation 3: 10.736670
+time of operation 4: 2.674257
+time of operation 5: 0.000996
+time of operation 6: 0.882697
+time of operation 7: 8.037190
+Time elapsed: 49.867570 seconds. Result: 395224 (return code 0)
+
+	Time elapsed (avg): 49.853835 seconds, result: 395224
+std: 0.069768
+
+CONFIG: data/graphs/c_alias/lib.g,data/grammars/c_alias.cnf
+Time elapsed: 0.000001 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+
+	Time elapsed (avg): 0.000000 seconds, result: 0
+std: 0.000000
+
+CONFIG: data/graphs/c_alias/block.g,data/grammars/c_alias.cnf
+Time elapsed: 0.000001 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+
+	Time elapsed (avg): 0.000000 seconds, result: 0
+std: 0.000000
+
+CONFIG: data/graphs/c_alias/arch.g,data/grammars/c_alias.cnf
+Time elapsed: 0.000001 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+
+	Time elapsed (avg): 0.000000 seconds, result: 0
+std: 0.000000
+
+CONFIG: data/graphs/c_alias/crypto.g,data/grammars/c_alias.cnf
+Time elapsed: 0.000001 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+
+	Time elapsed (avg): 0.000000 seconds, result: 0
+std: 0.000000
+
+CONFIG: data/graphs/c_alias/security.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/security_smpl_5%_0.txt
+sample src_count: 173999
+
+time of operation 0: 10.259668
+time of operation 1: 5.421146
+time of operation 2: 13.561970
+time of operation 3: 11.264897
+time of operation 4: 2.845149
+time of operation 5: 0.001095
+time of operation 6: 0.863621
+time of operation 7: 8.478049
+Time elapsed: 52.970266 seconds. Result: 422145 (return code 0)
+
+time of operation 0: 10.175772
+time of operation 1: 5.287952
+time of operation 2: 13.156498
+time of operation 3: 11.227144
+time of operation 4: 2.867570
+time of operation 5: 0.001077
+time of operation 6: 0.847297
+time of operation 7: 9.010223
+Time elapsed: 52.887144 seconds. Result: 422145 (return code 0)
+
+time of operation 0: 10.612197
+time of operation 1: 5.299242
+time of operation 2: 13.373921
+time of operation 3: 11.309459
+time of operation 4: 2.830099
+time of operation 5: 0.001159
+time of operation 6: 0.892215
+time of operation 7: 8.560421
+Time elapsed: 53.148111 seconds. Result: 422145 (return code 0)
+
+time of operation 0: 10.458893
+time of operation 1: 5.369345
+time of operation 2: 13.523344
+time of operation 3: 11.059732
+time of operation 4: 2.860296
+time of operation 5: 0.001096
+time of operation 6: 0.854949
+time of operation 7: 8.380480
+Time elapsed: 52.780107 seconds. Result: 422145 (return code 0)
+
+time of operation 0: 10.398482
+time of operation 1: 5.376644
+time of operation 2: 13.676635
+time of operation 3: 11.310830
+time of operation 4: 2.844587
+time of operation 5: 0.001052
+time of operation 6: 0.873201
+time of operation 7: 8.353123
+Time elapsed: 53.106911 seconds. Result: 422145 (return code 0)
+
+time of operation 0: 10.107076
+time of operation 1: 5.325704
+time of operation 2: 13.504561
+time of operation 3: 11.553086
+time of operation 4: 2.871781
+time of operation 5: 0.001128
+time of operation 6: 0.994281
+time of operation 7: 8.509694
+Time elapsed: 53.142690 seconds. Result: 422145 (return code 0)
+
+time of operation 0: 10.202578
+time of operation 1: 5.469623
+time of operation 2: 13.502817
+time of operation 3: 11.285567
+time of operation 4: 2.861111
+time of operation 5: 0.001124
+time of operation 6: 0.937723
+time of operation 7: 8.661827
+Time elapsed: 53.232292 seconds. Result: 422145 (return code 0)
+
+time of operation 0: 10.324678
+time of operation 1: 5.326066
+time of operation 2: 13.824667
+time of operation 3: 11.102625
+time of operation 4: 2.834456
+time of operation 5: 0.001297
+time of operation 6: 0.841658
+time of operation 7: 8.331404
+Time elapsed: 52.859530 seconds. Result: 422145 (return code 0)
+
+time of operation 0: 10.536823
+time of operation 1: 5.322215
+time of operation 2: 13.344059
+time of operation 3: 11.174375
+time of operation 4: 2.863429
+time of operation 5: 0.001120
+time of operation 6: 0.910697
+time of operation 7: 8.794476
+Time elapsed: 53.223900 seconds. Result: 422145 (return code 0)
+
+time of operation 0: 10.179777
+time of operation 1: 5.293484
+time of operation 2: 13.409495
+time of operation 3: 11.264005
+time of operation 4: 2.855560
+time of operation 5: 0.001182
+time of operation 6: 0.872678
+time of operation 7: 8.770118
+Time elapsed: 52.925542 seconds. Result: 422145 (return code 0)
+
+	Time elapsed (avg): 53.027649 seconds, result: 422145
+std: 0.154085
+
+CONFIG: data/graphs/c_alias/sound.g,data/grammars/c_alias.cnf
+Time elapsed: 0.000001 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+
+	Time elapsed (avg): 0.000000 seconds, result: 0
+std: 0.000000
+
+CONFIG: data/graphs/c_alias/fs.g,data/grammars/c_alias.cnf
+Time elapsed: 0.000001 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+
+	Time elapsed (avg): 0.000000 seconds, result: 0
+std: 0.000000
+
+CONFIG: data/graphs/c_alias/net.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/net_smpl_5%_0.txt
+sample src_count: 201973
+
+time of operation 0: 20.937624
+time of operation 1: 11.945372
+time of operation 2: 26.981501
+time of operation 3: 22.863209
+time of operation 4: 4.859802
+time of operation 5: 0.001802
+time of operation 6: 2.070452
+time of operation 7: 17.031329
+Time elapsed: 107.010855 seconds. Result: 666800 (return code 0)
+
+time of operation 0: 20.860157
+time of operation 1: 11.926105
+time of operation 2: 26.965901
+time of operation 3: 22.818153
+time of operation 4: 4.826331
+time of operation 5: 0.001831
+time of operation 6: 2.009557
+time of operation 7: 17.196795
+Time elapsed: 106.924049 seconds. Result: 666800 (return code 0)
+
+time of operation 0: 21.247540
+time of operation 1: 11.895262
+time of operation 2: 26.790066
+time of operation 3: 22.734975
+time of operation 4: 4.877002
+time of operation 5: 0.001857
+time of operation 6: 2.054682
+time of operation 7: 17.141940
+Time elapsed: 107.040137 seconds. Result: 666800 (return code 0)
+
+time of operation 0: 21.067749
+time of operation 1: 11.846212
+time of operation 2: 26.760735
+time of operation 3: 22.804884
+time of operation 4: 4.814745
+time of operation 5: 0.001969
+time of operation 6: 2.106774
+time of operation 7: 17.111828
+Time elapsed: 106.837332 seconds. Result: 666800 (return code 0)
+
+time of operation 0: 21.026659
+time of operation 1: 11.845576
+time of operation 2: 27.136965
+time of operation 3: 22.556564
+time of operation 4: 4.890173
+time of operation 5: 0.001851
+time of operation 6: 2.036540
+time of operation 7: 17.113035
+Time elapsed: 106.927951 seconds. Result: 666800 (return code 0)
+
+time of operation 0: 21.084622
+time of operation 1: 11.934133
+time of operation 2: 26.799634
+time of operation 3: 22.799853
+time of operation 4: 4.834544
+time of operation 5: 0.001955
+time of operation 6: 2.030860
+time of operation 7: 17.297141
+Time elapsed: 107.146152 seconds. Result: 666800 (return code 0)
+
+time of operation 0: 21.151529
+time of operation 1: 11.907713
+time of operation 2: 27.024605
+time of operation 3: 22.580981
+time of operation 4: 4.821243
+time of operation 5: 0.001917
+time of operation 6: 1.984955
+time of operation 7: 17.177087
+Time elapsed: 106.973091 seconds. Result: 666800 (return code 0)
+
+time of operation 0: 21.169987
+time of operation 1: 11.866951
+time of operation 2: 27.054520
+time of operation 3: 22.720140
+time of operation 4: 4.877297
+time of operation 5: 0.002130
+time of operation 6: 1.923212
+time of operation 7: 16.946237
+Time elapsed: 106.913228 seconds. Result: 666800 (return code 0)
+
+time of operation 0: 21.027661
+time of operation 1: 11.912989
+time of operation 2: 27.198081
+time of operation 3: 22.697011
+time of operation 4: 4.883375
+time of operation 5: 0.001878
+time of operation 6: 1.991569
+time of operation 7: 16.895689
+Time elapsed: 106.971108 seconds. Result: 666800 (return code 0)
+
+time of operation 0: 21.262350
+time of operation 1: 12.067061
+time of operation 2: 26.930899
+time of operation 3: 22.564538
+time of operation 4: 4.901380
+time of operation 5: 0.001843
+time of operation 6: 2.050901
+time of operation 7: 17.206722
+Time elapsed: 107.349227 seconds. Result: 666800 (return code 0)
+
+	Time elapsed (avg): 107.009313 seconds, result: 666800
+std: 0.138091
+
+CONFIG: data/graphs/c_alias/drivers.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/drivers_smpl_5%_0.txt
+sample src_count: 213690
+
+time of operation 0: 17.317805
+time of operation 1: 14.116701
+time of operation 2: 23.877773
+time of operation 3: 18.718222
+time of operation 4: 3.744878
+time of operation 5: 0.001464
+time of operation 6: 1.568279
+time of operation 7: 13.896269
+Time elapsed: 93.584115 seconds. Result: 1427769 (return code 0)
+
+time of operation 0: 17.209530
+time of operation 1: 14.138711
+time of operation 2: 24.230775
+time of operation 3: 18.646750
+time of operation 4: 3.800432
+time of operation 5: 0.001497
+time of operation 6: 1.590852
+time of operation 7: 13.733860
+Time elapsed: 93.701732 seconds. Result: 1427769 (return code 0)
+
+time of operation 0: 17.317103
+time of operation 1: 14.079786
+time of operation 2: 24.164728
+time of operation 3: 18.408265
+time of operation 4: 3.786340
+time of operation 5: 0.001474
+time of operation 6: 1.605902
+time of operation 7: 13.952035
+Time elapsed: 93.705667 seconds. Result: 1427769 (return code 0)
+
+time of operation 0: 17.142721
+time of operation 1: 13.850565
+time of operation 2: 24.030142
+time of operation 3: 18.695464
+time of operation 4: 3.818212
+time of operation 5: 0.001436
+time of operation 6: 1.758173
+time of operation 7: 13.914443
+Time elapsed: 93.566574 seconds. Result: 1427769 (return code 0)
+
+time of operation 0: 17.469458
+time of operation 1: 14.044026
+time of operation 2: 23.969075
+time of operation 3: 18.350153
+time of operation 4: 3.806917
+time of operation 5: 0.001434
+time of operation 6: 1.647180
+time of operation 7: 14.080568
+Time elapsed: 93.740286 seconds. Result: 1427769 (return code 0)
+
+time of operation 0: 17.699613
+time of operation 1: 14.139043
+time of operation 2: 23.885843
+time of operation 3: 18.403283
+time of operation 4: 3.808996
+time of operation 5: 0.001467
+time of operation 6: 1.627880
+time of operation 7: 14.275782
+Time elapsed: 94.213968 seconds. Result: 1427769 (return code 0)
+
+time of operation 0: 17.404365
+time of operation 1: 14.068950
+time of operation 2: 24.315854
+time of operation 3: 18.592495
+time of operation 4: 3.811900
+time of operation 5: 0.001499
+time of operation 6: 1.652225
+time of operation 7: 13.952563
+Time elapsed: 94.143655 seconds. Result: 1427769 (return code 0)
+
+time of operation 0: 17.405831
+time of operation 1: 14.092879
+time of operation 2: 24.214517
+time of operation 3: 18.692349
+time of operation 4: 3.769189
+time of operation 5: 0.001405
+time of operation 6: 1.647550
+time of operation 7: 13.913694
+Time elapsed: 94.094233 seconds. Result: 1427769 (return code 0)
+
+time of operation 0: 17.692690
+time of operation 1: 14.029976
+time of operation 2: 23.976056
+time of operation 3: 18.644876
+time of operation 4: 3.760807
+time of operation 5: 0.001511
+time of operation 6: 1.671374
+time of operation 7: 14.074971
+Time elapsed: 94.191078 seconds. Result: 1427769 (return code 0)
+
+time of operation 0: 17.700252
+time of operation 1: 14.147058
+time of operation 2: 23.921691
+time of operation 3: 18.623128
+time of operation 4: 3.781830
+time of operation 5: 0.001595
+time of operation 6: 1.607918
+time of operation 7: 13.962766
+Time elapsed: 94.090610 seconds. Result: 1427769 (return code 0)
+
+	Time elapsed (avg): 93.903192 seconds, result: 1427769
+std: 0.251031
+
+CONFIG: data/graphs/rdf/go.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/go_smpl_5%_0.txt
+sample src_count: 29146
+
+time of operation 0: 0.338400
+time of operation 1: 0.332507
+time of operation 2: 0.150327
+time of operation 3: 0.265105
+time of operation 4: 0.107258
+time of operation 5: 0.000146
+time of operation 6: 0.049649
+time of operation 7: 0.227720
+Time elapsed: 1.483988 seconds. Result: 514031 (return code 0)
+
+time of operation 0: 0.339236
+time of operation 1: 0.355657
+time of operation 2: 0.159420
+time of operation 3: 0.253797
+time of operation 4: 0.107898
+time of operation 5: 0.000160
+time of operation 6: 0.047588
+time of operation 7: 0.218891
+Time elapsed: 1.499147 seconds. Result: 514031 (return code 0)
+
+time of operation 0: 0.337482
+time of operation 1: 0.331799
+time of operation 2: 0.159008
+time of operation 3: 0.269324
+time of operation 4: 0.108134
+time of operation 5: 0.000171
+time of operation 6: 0.048184
+time of operation 7: 0.220330
+Time elapsed: 1.486131 seconds. Result: 514031 (return code 0)
+
+time of operation 0: 0.326886
+time of operation 1: 0.329879
+time of operation 2: 0.165139
+time of operation 3: 0.270583
+time of operation 4: 0.107636
+time of operation 5: 0.000160
+time of operation 6: 0.050371
+time of operation 7: 0.238908
+Time elapsed: 1.504912 seconds. Result: 514031 (return code 0)
+
+time of operation 0: 0.331472
+time of operation 1: 0.386036
+time of operation 2: 0.165130
+time of operation 3: 0.259736
+time of operation 4: 0.110610
+time of operation 5: 0.000146
+time of operation 6: 0.049217
+time of operation 7: 0.227246
+Time elapsed: 1.541483 seconds. Result: 514031 (return code 0)
+
+time of operation 0: 0.339766
+time of operation 1: 0.366334
+time of operation 2: 0.165544
+time of operation 3: 0.260722
+time of operation 4: 0.112733
+time of operation 5: 0.000145
+time of operation 6: 0.049815
+time of operation 7: 0.229833
+Time elapsed: 1.536958 seconds. Result: 514031 (return code 0)
+
+time of operation 0: 0.346225
+time of operation 1: 0.367074
+time of operation 2: 0.166911
+time of operation 3: 0.251101
+time of operation 4: 0.111744
+time of operation 5: 0.000128
+time of operation 6: 0.050155
+time of operation 7: 0.228604
+Time elapsed: 1.536936 seconds. Result: 514031 (return code 0)
+
+time of operation 0: 0.334926
+time of operation 1: 0.359070
+time of operation 2: 0.159227
+time of operation 3: 0.248589
+time of operation 4: 0.109863
+time of operation 5: 0.000122
+time of operation 6: 0.049606
+time of operation 7: 0.230365
+Time elapsed: 1.506753 seconds. Result: 514031 (return code 0)
+
+time of operation 0: 0.335785
+time of operation 1: 0.359073
+time of operation 2: 0.168823
+time of operation 3: 0.263755
+time of operation 4: 0.114094
+time of operation 5: 0.000160
+time of operation 6: 0.052126
+time of operation 7: 0.227604
+Time elapsed: 1.532916 seconds. Result: 514031 (return code 0)
+
+time of operation 0: 0.328754
+time of operation 1: 0.349985
+time of operation 2: 0.160633
+time of operation 3: 0.239548
+time of operation 4: 0.106477
+time of operation 5: 0.000145
+time of operation 6: 0.047764
+time of operation 7: 0.215455
+Time elapsed: 1.461984 seconds. Result: 514031 (return code 0)
+
+	Time elapsed (avg): 1.509121 seconds, result: 514031
+std: 0.025820
+
+CONFIG: data/graphs/rdf/go_hierarchy.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/go_hierarchy_smpl_5%_0.txt
+sample src_count: 2250
+
+time of operation 0: 0.020781
+time of operation 1: 0.049592
+time of operation 2: 0.044501
+time of operation 3: 0.015236
+time of operation 4: 0.004090
+time of operation 5: 0.000015
+time of operation 6: 0.002874
+time of operation 7: 0.012592
+Time elapsed: 0.152182 seconds. Result: 170575 (return code 0)
+
+time of operation 0: 0.020195
+time of operation 1: 0.049498
+time of operation 2: 0.044369
+time of operation 3: 0.015376
+time of operation 4: 0.004053
+time of operation 5: 0.000015
+time of operation 6: 0.002782
+time of operation 7: 0.012668
+Time elapsed: 0.151692 seconds. Result: 170575 (return code 0)
+
+time of operation 0: 0.020146
+time of operation 1: 0.049217
+time of operation 2: 0.044419
+time of operation 3: 0.015435
+time of operation 4: 0.003933
+time of operation 5: 0.000015
+time of operation 6: 0.002826
+time of operation 7: 0.012560
+Time elapsed: 0.151333 seconds. Result: 170575 (return code 0)
+
+time of operation 0: 0.020081
+time of operation 1: 0.049706
+time of operation 2: 0.044367
+time of operation 3: 0.015309
+time of operation 4: 0.004108
+time of operation 5: 0.000015
+time of operation 6: 0.002677
+time of operation 7: 0.012610
+Time elapsed: 0.151597 seconds. Result: 170575 (return code 0)
+
+time of operation 0: 0.020008
+time of operation 1: 0.049213
+time of operation 2: 0.044175
+time of operation 3: 0.015272
+time of operation 4: 0.004086
+time of operation 5: 0.000014
+time of operation 6: 0.002737
+time of operation 7: 0.012621
+Time elapsed: 0.150881 seconds. Result: 170575 (return code 0)
+
+time of operation 0: 0.019805
+time of operation 1: 0.079961
+time of operation 2: 0.057415
+time of operation 3: 0.014971
+time of operation 4: 0.005936
+time of operation 5: 0.000015
+time of operation 6: 0.002715
+time of operation 7: 0.012467
+Time elapsed: 0.196045 seconds. Result: 170575 (return code 0)
+
+time of operation 0: 0.019827
+time of operation 1: 0.049198
+time of operation 2: 0.044324
+time of operation 3: 0.015349
+time of operation 4: 0.004136
+time of operation 5: 0.000014
+time of operation 6: 0.002767
+time of operation 7: 0.012605
+Time elapsed: 0.150899 seconds. Result: 170575 (return code 0)
+
+time of operation 0: 0.020016
+time of operation 1: 0.050284
+time of operation 2: 0.044609
+time of operation 3: 0.015432
+time of operation 4: 0.004177
+time of operation 5: 0.000015
+time of operation 6: 0.002761
+time of operation 7: 0.012700
+Time elapsed: 0.152851 seconds. Result: 170575 (return code 0)
+
+time of operation 0: 0.020154
+time of operation 1: 0.049836
+time of operation 2: 0.044181
+time of operation 3: 0.015217
+time of operation 4: 0.004054
+time of operation 5: 0.000014
+time of operation 6: 0.002730
+time of operation 7: 0.012509
+Time elapsed: 0.151337 seconds. Result: 170575 (return code 0)
+
+time of operation 0: 0.020139
+time of operation 1: 0.049731
+time of operation 2: 0.044492
+time of operation 3: 0.015309
+time of operation 4: 0.004083
+time of operation 5: 0.000015
+time of operation 6: 0.002722
+time of operation 7: 0.012572
+Time elapsed: 0.151911 seconds. Result: 170575 (return code 0)
+
+	Time elapsed (avg): 0.156073 seconds, result: 170575
+std: 0.013336
+
+CONFIG: data/graphs/rdf/taxonomy_hierarchy.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/taxonomy_hierarchy_smpl_5%_0.txt
+sample src_count: 105631
+
+time of operation 0: 1.974655
+time of operation 1: 6.647175
+time of operation 2: 0.386307
+time of operation 3: 0.279174
+time of operation 4: 0.254652
+time of operation 5: 0.000028
+time of operation 6: 0.082915
+time of operation 7: 0.214061
+Time elapsed: 9.950845 seconds. Result: 3664329 (return code 0)
+
+time of operation 0: 2.022972
+time of operation 1: 6.509032
+time of operation 2: 0.352163
+time of operation 3: 0.263957
+time of operation 4: 0.260116
+time of operation 5: 0.000025
+time of operation 6: 0.082304
+time of operation 7: 0.215035
+Time elapsed: 9.815699 seconds. Result: 3664329 (return code 0)
+
+time of operation 0: 1.936066
+time of operation 1: 6.503018
+time of operation 2: 0.347550
+time of operation 3: 0.265409
+time of operation 4: 0.277373
+time of operation 5: 0.000028
+time of operation 6: 0.109415
+time of operation 7: 0.243218
+Time elapsed: 9.794062 seconds. Result: 3664329 (return code 0)
+
+time of operation 0: 1.975742
+time of operation 1: 6.507168
+time of operation 2: 0.379061
+time of operation 3: 0.297694
+time of operation 4: 0.261576
+time of operation 5: 0.000027
+time of operation 6: 0.081655
+time of operation 7: 0.213533
+Time elapsed: 9.825747 seconds. Result: 3664329 (return code 0)
+
+time of operation 0: 2.005950
+time of operation 1: 6.538071
+time of operation 2: 0.344613
+time of operation 3: 0.265640
+time of operation 4: 0.265983
+time of operation 5: 0.000030
+time of operation 6: 0.082225
+time of operation 7: 0.260068
+Time elapsed: 9.872017 seconds. Result: 3664329 (return code 0)
+
+time of operation 0: 1.965026
+time of operation 1: 6.554097
+time of operation 2: 0.345517
+time of operation 3: 0.262122
+time of operation 4: 0.262616
+time of operation 5: 0.000029
+time of operation 6: 0.081668
+time of operation 7: 0.233518
+Time elapsed: 9.815720 seconds. Result: 3664329 (return code 0)
+
+time of operation 0: 1.919892
+time of operation 1: 6.501829
+time of operation 2: 0.357766
+time of operation 3: 0.347741
+time of operation 4: 0.274064
+time of operation 5: 0.000029
+time of operation 6: 0.080574
+time of operation 7: 0.216867
+Time elapsed: 9.809509 seconds. Result: 3664329 (return code 0)
+
+time of operation 0: 1.976960
+time of operation 1: 6.508337
+time of operation 2: 0.340329
+time of operation 3: 0.266455
+time of operation 4: 0.256318
+time of operation 5: 0.000027
+time of operation 6: 0.082680
+time of operation 7: 0.241137
+Time elapsed: 9.782961 seconds. Result: 3664329 (return code 0)
+
+time of operation 0: 2.014838
+time of operation 1: 6.529881
+time of operation 2: 0.344527
+time of operation 3: 0.262019
+time of operation 4: 0.218252
+time of operation 5: 0.000028
+time of operation 6: 0.083368
+time of operation 7: 0.254809
+Time elapsed: 9.814618 seconds. Result: 3664329 (return code 0)
+
+time of operation 0: 2.027054
+time of operation 1: 6.534474
+time of operation 2: 0.347441
+time of operation 3: 0.267612
+time of operation 4: 0.251690
+time of operation 5: 0.000029
+time of operation 6: 0.083292
+time of operation 7: 0.215384
+Time elapsed: 9.833938 seconds. Result: 3664329 (return code 0)
+
+	Time elapsed (avg): 9.831512 seconds, result: 3664329
+std: 0.045770
+
+CONFIG: data/graphs/rdf/eclass.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/eclass_smpl_5%_0.txt
+sample src_count: 11955
+
+time of operation 0: 0.032291
+time of operation 1: 0.021986
+time of operation 2: 0.013634
+time of operation 3: 0.023270
+time of operation 4: 0.012095
+time of operation 5: 0.000016
+time of operation 6: 0.009068
+time of operation 7: 0.028856
+Time elapsed: 0.148243 seconds. Result: 54235 (return code 0)
+
+time of operation 0: 0.037570
+time of operation 1: 0.025785
+time of operation 2: 0.015838
+time of operation 3: 0.025842
+time of operation 4: 0.012430
+time of operation 5: 0.000026
+time of operation 6: 0.010123
+time of operation 7: 0.031644
+Time elapsed: 0.167809 seconds. Result: 54235 (return code 0)
+
+time of operation 0: 0.033195
+time of operation 1: 0.022213
+time of operation 2: 0.013873
+time of operation 3: 0.023179
+time of operation 4: 0.012086
+time of operation 5: 0.000013
+time of operation 6: 0.009061
+time of operation 7: 0.029008
+Time elapsed: 0.149861 seconds. Result: 54235 (return code 0)
+
+time of operation 0: 0.033041
+time of operation 1: 0.022447
+time of operation 2: 0.013787
+time of operation 3: 0.023460
+time of operation 4: 0.012003
+time of operation 5: 0.000012
+time of operation 6: 0.009217
+time of operation 7: 0.028961
+Time elapsed: 0.150027 seconds. Result: 54235 (return code 0)
+
+time of operation 0: 0.032425
+time of operation 1: 0.021942
+time of operation 2: 0.013710
+time of operation 3: 0.023016
+time of operation 4: 0.012062
+time of operation 5: 0.000012
+time of operation 6: 0.008954
+time of operation 7: 0.028825
+Time elapsed: 0.148117 seconds. Result: 54235 (return code 0)
+
+time of operation 0: 0.033092
+time of operation 1: 0.022756
+time of operation 2: 0.013813
+time of operation 3: 0.023705
+time of operation 4: 0.012415
+time of operation 5: 0.000027
+time of operation 6: 0.009865
+time of operation 7: 0.029513
+Time elapsed: 0.152371 seconds. Result: 54235 (return code 0)
+
+time of operation 0: 0.032656
+time of operation 1: 0.022015
+time of operation 2: 0.013784
+time of operation 3: 0.023473
+time of operation 4: 0.012054
+time of operation 5: 0.000012
+time of operation 6: 0.008987
+time of operation 7: 0.028926
+Time elapsed: 0.149573 seconds. Result: 54235 (return code 0)
+
+time of operation 0: 0.033159
+time of operation 1: 0.022520
+time of operation 2: 0.013766
+time of operation 3: 0.023334
+time of operation 4: 0.012115
+time of operation 5: 0.000013
+time of operation 6: 0.009110
+time of operation 7: 0.029197
+Time elapsed: 0.150627 seconds. Result: 54235 (return code 0)
+
+time of operation 0: 0.032576
+time of operation 1: 0.022246
+time of operation 2: 0.013739
+time of operation 3: 0.023192
+time of operation 4: 0.012024
+time of operation 5: 0.000013
+time of operation 6: 0.009063
+time of operation 7: 0.029092
+Time elapsed: 0.149198 seconds. Result: 54235 (return code 0)
+
+time of operation 0: 0.032524
+time of operation 1: 0.022120
+time of operation 2: 0.013576
+time of operation 3: 0.023038
+time of operation 4: 0.011997
+time of operation 5: 0.000015
+time of operation 6: 0.009038
+time of operation 7: 0.028782
+Time elapsed: 0.148430 seconds. Result: 54235 (return code 0)
+
+	Time elapsed (avg): 0.151426 seconds, result: 54235
+std: 0.005593
+
+CONFIG: data/graphs/rdf/taxonomy.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+Time elapsed: 0.000001 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+Time elapsed: 0.000000 seconds. Result: 0 (return code -2)
+
+	Time elapsed (avg): 0.000000 seconds, result: 0
+std: 0.000000
+

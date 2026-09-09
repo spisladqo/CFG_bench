@@ -1,0 +1,31 @@
+gcc test.c parser.c -O2  -lgraphblas -llagraph -llagraphx -I/usr/local/include/suitesparse -I./ \
+	-o test && ./test
+Start bench
+CONFIG: data/graphs/c_alias/init.g,data/grammars/c_alias_rewritten.cnf
+src_count: 24462
+	16.861s	16.917s	17.001s	17.033s	17.098s
+	Time elapsed (avg): 16.981885 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/mm.g,data/grammars/c_alias_rewritten.cnf
+src_count: 25382
+	23.838s	23.980s	23.944s	23.973s	24.097s
+	Time elapsed (avg): 23.966386 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/ipc.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34010
+	28.153s	28.460s	28.394s	28.099s	28.475s
+	Time elapsed (avg): 28.316367 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/lib.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34013
+	28.669s	28.806s	28.922s	28.970s	28.994s
+	Time elapsed (avg): 28.872259 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/block.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34232
+	29.662s	27.135s	27.447s	28.872s	33.908s
+	Time elapsed (avg): 29.405013 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/arch.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34484
+	28.684s	30.623s

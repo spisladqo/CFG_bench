@@ -1,0 +1,377 @@
+Start bench
+CONFIG: data/graphs/c_alias/init.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/init_smpl_1%_1.txt
+sample src_count: 24462
+Time elapsed: 15.684649 seconds. Result: 58860 (return code 0)
+Time elapsed: 15.235119 seconds. Result: 58860 (return code 0)
+Time elapsed: 15.439720 seconds. Result: 58860 (return code 0)
+Time elapsed: 15.547469 seconds. Result: 58860 (return code 0)
+Time elapsed: 15.550526 seconds. Result: 58860 (return code 0)
+Time elapsed: 15.707200 seconds. Result: 58860 (return code 0)
+Time elapsed: 15.684089 seconds. Result: 58860 (return code 0)
+Time elapsed: 15.757036 seconds. Result: 58860 (return code 0)
+Time elapsed: 16.154028 seconds. Result: 58860 (return code 0)
+Time elapsed: 17.833823 seconds. Result: 58860 (return code 0)
+Time elapsed: 17.882704 seconds. Result: 58860 (return code 0)
+Time elapsed: 17.273542 seconds. Result: 58860 (return code 0)
+Time elapsed: 16.259606 seconds. Result: 58860 (return code 0)
+Time elapsed: 15.930534 seconds. Result: 58860 (return code 0)
+Time elapsed: 15.742022 seconds. Result: 58860 (return code 0)
+
+	Time elapsed (avg): 16.112138 seconds, error: 58860
+	Std: 0.822721
+
+CONFIG: data/graphs/c_alias/mm.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/mm_smpl_1%_1.txt
+sample src_count: 25382
+Time elapsed: 15.870667 seconds. Result: 61429 (return code 0)
+Time elapsed: 15.376947 seconds. Result: 61429 (return code 0)
+Time elapsed: 15.447291 seconds. Result: 61429 (return code 0)
+Time elapsed: 15.215607 seconds. Result: 61429 (return code 0)
+Time elapsed: 15.032235 seconds. Result: 61429 (return code 0)
+Time elapsed: 16.141000 seconds. Result: 61429 (return code 0)
+Time elapsed: 15.987504 seconds. Result: 61429 (return code 0)
+Time elapsed: 15.541984 seconds. Result: 61429 (return code 0)
+Time elapsed: 15.538210 seconds. Result: 61429 (return code 0)
+Time elapsed: 15.098982 seconds. Result: 61429 (return code 0)
+Time elapsed: 14.670723 seconds. Result: 61429 (return code 0)
+Time elapsed: 15.657739 seconds. Result: 61429 (return code 0)
+Time elapsed: 14.673406 seconds. Result: 61429 (return code 0)
+Time elapsed: 15.434717 seconds. Result: 61429 (return code 0)
+Time elapsed: 14.445128 seconds. Result: 61429 (return code 0)
+
+	Time elapsed (avg): 15.342143 seconds, error: 61429
+	Std: 0.476561
+
+CONFIG: data/graphs/c_alias/ipc.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/ipc_smpl_1%_1.txt
+sample src_count: 34010
+Time elapsed: 22.602214 seconds. Result: 77864 (return code 0)
+Time elapsed: 22.637338 seconds. Result: 77864 (return code 0)
+Time elapsed: 22.696904 seconds. Result: 77864 (return code 0)
+Time elapsed: 22.695803 seconds. Result: 77864 (return code 0)
+Time elapsed: 22.636080 seconds. Result: 77864 (return code 0)
+Time elapsed: 22.646010 seconds. Result: 77864 (return code 0)
+Time elapsed: 22.680733 seconds. Result: 77864 (return code 0)
+Time elapsed: 22.852525 seconds. Result: 77864 (return code 0)
+Time elapsed: 22.665927 seconds. Result: 77864 (return code 0)
+Time elapsed: 22.726156 seconds. Result: 77864 (return code 0)
+Time elapsed: 22.755062 seconds. Result: 77864 (return code 0)
+Time elapsed: 22.842892 seconds. Result: 77864 (return code 0)
+Time elapsed: 22.822637 seconds. Result: 77864 (return code 0)
+Time elapsed: 24.103046 seconds. Result: 77864 (return code 0)
+Time elapsed: 24.694594 seconds. Result: 77864 (return code 0)
+
+	Time elapsed (avg): 22.937195 seconds, error: 77864
+	Std: 0.588076
+
+CONFIG: data/graphs/c_alias/lib.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/lib_smpl_1%_1.txt
+sample src_count: 34013
+Time elapsed: 22.074238 seconds. Result: 80093 (return code 0)
+Time elapsed: 21.505794 seconds. Result: 80093 (return code 0)
+Time elapsed: 20.943472 seconds. Result: 80093 (return code 0)
+Time elapsed: 21.350962 seconds. Result: 80093 (return code 0)
+Time elapsed: 22.235471 seconds. Result: 80093 (return code 0)
+Time elapsed: 21.050940 seconds. Result: 80093 (return code 0)
+Time elapsed: 21.670235 seconds. Result: 80093 (return code 0)
+Time elapsed: 23.311669 seconds. Result: 80093 (return code 0)
+Time elapsed: 21.520402 seconds. Result: 80093 (return code 0)
+Time elapsed: 21.686573 seconds. Result: 80093 (return code 0)
+Time elapsed: 20.896429 seconds. Result: 80093 (return code 0)
+Time elapsed: 20.859250 seconds. Result: 80093 (return code 0)
+Time elapsed: 20.838958 seconds. Result: 80093 (return code 0)
+Time elapsed: 20.791042 seconds. Result: 80093 (return code 0)
+Time elapsed: 20.793168 seconds. Result: 80093 (return code 0)
+
+	Time elapsed (avg): 21.435240 seconds, error: 80093
+	Std: 0.678322
+
+CONFIG: data/graphs/c_alias/block.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/block_smpl_1%_1.txt
+sample src_count: 34232
+Time elapsed: 21.057806 seconds. Result: 80156 (return code 0)
+Time elapsed: 21.098844 seconds. Result: 80156 (return code 0)
+Time elapsed: 21.104795 seconds. Result: 80156 (return code 0)
+Time elapsed: 21.152222 seconds. Result: 80156 (return code 0)
+Time elapsed: 22.020082 seconds. Result: 80156 (return code 0)
+Time elapsed: 23.071872 seconds. Result: 80156 (return code 0)
+Time elapsed: 23.250129 seconds. Result: 80156 (return code 0)
+Time elapsed: 21.277021 seconds. Result: 80156 (return code 0)
+Time elapsed: 21.066307 seconds. Result: 80156 (return code 0)
+Time elapsed: 21.186447 seconds. Result: 80156 (return code 0)
+Time elapsed: 21.265732 seconds. Result: 80156 (return code 0)
+Time elapsed: 21.290754 seconds. Result: 80156 (return code 0)
+Time elapsed: 21.474509 seconds. Result: 80156 (return code 0)
+Time elapsed: 21.217983 seconds. Result: 80156 (return code 0)
+Time elapsed: 21.445065 seconds. Result: 80156 (return code 0)
+
+	Time elapsed (avg): 21.531971 seconds, error: 80156
+	Std: 0.680219
+
+CONFIG: data/graphs/c_alias/arch.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/arch_smpl_1%_1.txt
+sample src_count: 34484
+Time elapsed: 21.911421 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.933075 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.861732 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.852896 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.812121 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.826662 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.913266 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.642861 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.425468 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.276361 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.427459 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.444883 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.422893 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.279594 seconds. Result: 80368 (return code 0)
+Time elapsed: 21.329487 seconds. Result: 80368 (return code 0)
+
+	Time elapsed (avg): 21.624012 seconds, error: 80368
+	Std: 0.248236
+
+CONFIG: data/graphs/c_alias/crypto.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/crypto_smpl_1%_1.txt
+sample src_count: 34649
+Time elapsed: 24.600223 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.413421 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.520857 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.535093 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.544226 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.387967 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.501391 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.392275 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.511901 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.362938 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.451398 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.434235 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.458921 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.351026 seconds. Result: 81064 (return code 0)
+Time elapsed: 24.453356 seconds. Result: 81064 (return code 0)
+
+	Time elapsed (avg): 24.461282 seconds, error: 81064
+	Std: 0.070477
+
+CONFIG: data/graphs/c_alias/security.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/security_smpl_1%_1.txt
+sample src_count: 34799
+Time elapsed: 26.528963 seconds. Result: 84295 (return code 0)
+Time elapsed: 26.537987 seconds. Result: 84295 (return code 0)
+Time elapsed: 26.662669 seconds. Result: 84295 (return code 0)
+Time elapsed: 26.546165 seconds. Result: 84295 (return code 0)
+Time elapsed: 26.560867 seconds. Result: 84295 (return code 0)
+Time elapsed: 26.554036 seconds. Result: 84295 (return code 0)
+Time elapsed: 26.605953 seconds. Result: 84295 (return code 0)
+Time elapsed: 26.568012 seconds. Result: 84295 (return code 0)
+Time elapsed: 26.929757 seconds. Result: 84295 (return code 0)
+Time elapsed: 26.577531 seconds. Result: 84295 (return code 0)
+Time elapsed: 26.530913 seconds. Result: 84295 (return code 0)
+Time elapsed: 26.672335 seconds. Result: 84295 (return code 0)
+Time elapsed: 29.582096 seconds. Result: 84295 (return code 0)
+Time elapsed: 27.348279 seconds. Result: 84295 (return code 0)
+Time elapsed: 27.748699 seconds. Result: 84295 (return code 0)
+
+	Time elapsed (avg): 26.930284 seconds, error: 84295
+	Std: 0.786371
+
+CONFIG: data/graphs/c_alias/sound.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/sound_smpl_1%_1.txt
+sample src_count: 35288
+Time elapsed: 27.416657 seconds. Result: 90414 (return code 0)
+Time elapsed: 26.928215 seconds. Result: 90414 (return code 0)
+Time elapsed: 25.365974 seconds. Result: 90414 (return code 0)
+Time elapsed: 25.137795 seconds. Result: 90414 (return code 0)
+Time elapsed: 25.443904 seconds. Result: 90414 (return code 0)
+Time elapsed: 25.636572 seconds. Result: 90414 (return code 0)
+Time elapsed: 29.024552 seconds. Result: 90414 (return code 0)
+Time elapsed: 27.505764 seconds. Result: 90414 (return code 0)
+Time elapsed: 28.051287 seconds. Result: 90414 (return code 0)
+Time elapsed: 29.138482 seconds. Result: 90414 (return code 0)
+Time elapsed: 25.516806 seconds. Result: 90414 (return code 0)
+Time elapsed: 25.336837 seconds. Result: 90414 (return code 0)
+Time elapsed: 25.261167 seconds. Result: 90414 (return code 0)
+Time elapsed: 25.184758 seconds. Result: 90414 (return code 0)
+Time elapsed: 25.527021 seconds. Result: 90414 (return code 0)
+
+	Time elapsed (avg): 26.431719 seconds, error: 90414
+	Std: 1.396186
+
+CONFIG: data/graphs/c_alias/fs.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/fs_smpl_1%_1.txt
+sample src_count: 41774
+Time elapsed: 26.660338 seconds. Result: 141975 (return code 0)
+Time elapsed: 28.890599 seconds. Result: 141975 (return code 0)
+Time elapsed: 28.368600 seconds. Result: 141975 (return code 0)
+Time elapsed: 29.554012 seconds. Result: 141975 (return code 0)
+Time elapsed: 29.476467 seconds. Result: 141975 (return code 0)
+Time elapsed: 28.668481 seconds. Result: 141975 (return code 0)
+Time elapsed: 28.582869 seconds. Result: 141975 (return code 0)
+Time elapsed: 28.195791 seconds. Result: 141975 (return code 0)
+Time elapsed: 27.594731 seconds. Result: 141975 (return code 0)
+Time elapsed: 25.560974 seconds. Result: 141975 (return code 0)
+Time elapsed: 27.354437 seconds. Result: 141975 (return code 0)
+Time elapsed: 28.166083 seconds. Result: 141975 (return code 0)
+Time elapsed: 27.086628 seconds. Result: 141975 (return code 0)
+Time elapsed: 25.671189 seconds. Result: 141975 (return code 0)
+Time elapsed: 25.758533 seconds. Result: 141975 (return code 0)
+
+	Time elapsed (avg): 27.705982 seconds, error: 141975
+	Std: 1.282863
+
+CONFIG: data/graphs/c_alias/net.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/net_smpl_1%_1.txt
+sample src_count: 40394
+Time elapsed: 38.010755 seconds. Result: 128132 (return code 0)
+Time elapsed: 38.103986 seconds. Result: 128132 (return code 0)
+Time elapsed: 38.122755 seconds. Result: 128132 (return code 0)
+Time elapsed: 39.894169 seconds. Result: 128132 (return code 0)
+Time elapsed: 39.620787 seconds. Result: 128132 (return code 0)
+Time elapsed: 39.446195 seconds. Result: 128132 (return code 0)
+Time elapsed: 39.507503 seconds. Result: 128132 (return code 0)
+Time elapsed: 39.688083 seconds. Result: 128132 (return code 0)
+Time elapsed: 40.902753 seconds. Result: 128132 (return code 0)
+Time elapsed: 40.309941 seconds. Result: 128132 (return code 0)
+Time elapsed: 40.973963 seconds. Result: 128132 (return code 0)
+Time elapsed: 40.581903 seconds. Result: 128132 (return code 0)
+Time elapsed: 41.293115 seconds. Result: 128132 (return code 0)
+Time elapsed: 41.393058 seconds. Result: 128132 (return code 0)
+Time elapsed: 41.264004 seconds. Result: 128132 (return code 0)
+
+	Time elapsed (avg): 39.940865 seconds, error: 128132
+	Std: 1.132367
+
+CONFIG: data/graphs/c_alias/drivers.g,data/grammars/c_alias.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/drivers_smpl_1%_1.txt
+sample src_count: 42738
+Time elapsed: 39.002144 seconds. Result: 280292 (return code 0)
+Time elapsed: 45.231593 seconds. Result: 280292 (return code 0)
+Time elapsed: 44.237646 seconds. Result: 280292 (return code 0)
+Time elapsed: 50.673095 seconds. Result: 280292 (return code 0)
+Time elapsed: 42.244387 seconds. Result: 280292 (return code 0)
+Time elapsed: 41.019960 seconds. Result: 280292 (return code 0)
+Time elapsed: 43.760917 seconds. Result: 280292 (return code 0)
+Time elapsed: 44.402593 seconds. Result: 280292 (return code 0)
+Time elapsed: 42.961620 seconds. Result: 280292 (return code 0)
+Time elapsed: 43.576496 seconds. Result: 280292 (return code 0)
+Time elapsed: 42.936482 seconds. Result: 280292 (return code 0)
+Time elapsed: 43.326851 seconds. Result: 280292 (return code 0)
+Time elapsed: 40.791397 seconds. Result: 280292 (return code 0)
+Time elapsed: 43.315549 seconds. Result: 280292 (return code 0)
+Time elapsed: 45.184004 seconds. Result: 280292 (return code 0)
+
+	Time elapsed (avg): 43.510982 seconds, error: 280292
+	Std: 2.512426
+
+CONFIG: data/graphs/rdf/go.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/go_smpl_1%_1.txt
+sample src_count: 5829
+Time elapsed: 0.803250 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.797742 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.781222 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.788846 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.772422 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.769978 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.766358 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.781586 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.774896 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.788266 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.763204 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.808458 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.815451 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.807781 seconds. Result: 103995 (return code 0)
+Time elapsed: 0.809796 seconds. Result: 103995 (return code 0)
+
+	Time elapsed (avg): 0.788617 seconds, error: 103995
+	Std: 0.016873
+
+CONFIG: data/graphs/rdf/go_hierarchy.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/go_hierarchy_smpl_1%_1.txt
+sample src_count: 450
+Time elapsed: 0.188038 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.182031 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.196722 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.285943 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.256467 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.234070 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.208933 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.155691 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.161623 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.141891 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.142117 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.170035 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.189928 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.159599 seconds. Result: 42682 (return code 0)
+Time elapsed: 0.160064 seconds. Result: 42682 (return code 0)
+
+	Time elapsed (avg): 0.188877 seconds, error: 42682
+	Std: 0.040682
+
+CONFIG: data/graphs/rdf/taxonomy_hierarchy.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+Start bench
+CONFIG: data/graphs/rdf/taxonomy_hierarchy.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/taxonomy_hierarchy_smpl_1%_1.txt
+sample src_count: 21126
+Time elapsed: 5.980738 seconds. Result: 584362 (return code 0)
+Time elapsed: 6.658566 seconds. Result: 584362 (return code 0)
+Time elapsed: 6.250891 seconds. Result: 584362 (return code 0)
+Time elapsed: 6.125424 seconds. Result: 584362 (return code 0)
+Time elapsed: 6.225790 seconds. Result: 584362 (return code 0)
+Time elapsed: 5.894885 seconds. Result: 584362 (return code 0)
+Time elapsed: 6.204642 seconds. Result: 584362 (return code 0)
+Time elapsed: 6.263666 seconds. Result: 584362 (return code 0)
+Time elapsed: 6.156446 seconds. Result: 584362 (return code 0)
+Time elapsed: 6.249220 seconds. Result: 584362 (return code 0)
+Time elapsed: 6.375928 seconds. Result: 584362 (return code 0)
+Time elapsed: 6.017732 seconds. Result: 584362 (return code 0)
+Time elapsed: 6.195890 seconds. Result: 584362 (return code 0)
+Time elapsed: 5.919134 seconds. Result: 584362 (return code 0)
+Time elapsed: 5.810123 seconds. Result: 584362 (return code 0)
+
+	Time elapsed (avg): 6.155272 seconds, error: 584362
+	Std: 0.205546
+
+CONFIG: data/graphs/rdf/eclass.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/eclass_smpl_1%_1.txt
+sample src_count: 2391
+Time elapsed: 0.103743 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.089799 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.090161 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.090113 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.089578 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.089905 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.089832 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.092858 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.089328 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.088945 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.089299 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.089457 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.091726 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.089541 seconds. Result: 4781 (return code 0)
+Time elapsed: 0.090746 seconds. Result: 4781 (return code 0)
+
+	Time elapsed (avg): 0.091002 seconds, error: 4781
+	Std: 0.003544
+
+CONFIG: data/graphs/rdf/taxonomy.g,data/grammars/nested_parentheses_subClassOf_type.cnf
+sample path: ../CFPQ_PyAlgo/experiments/samples/taxonomy_smpl_1%_1.txt
+sample src_count: 57283
+Time elapsed: 2.832410 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.813274 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.883385 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.938888 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.882309 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.757246 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.806118 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.779780 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.710687 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.698874 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.814550 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.718806 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.737166 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.745435 seconds. Result: 57283 (return code 0)
+Time elapsed: 2.614001 seconds. Result: 57283 (return code 0)
+
+	Time elapsed (avg): 2.782195 seconds, error: 57283
+	Std: 0.080949
+

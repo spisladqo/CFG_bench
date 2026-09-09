@@ -1,0 +1,23 @@
+Start bench
+CONFIG: data/graphs/rdf/go_hierarchy.g,old_data/grammars/nested_parentheses_subClassOf_type.cnf
+src path:        ../CFPQ_PyAlgo/experiments/samples/go_hierarchy_smpl_1%_1.txt
+src_count:       450
+outpus:          (nil)
+adj_matrices:    0x20eb54f0
+terms_count:     4
+nonterms_count:  7
+rules:           0x20eb5440
+rules_count:     10
+	0.104s	0.105s	0.105s
+	Time elapsed (avg): 0.104614 seconds. Result: 33025 (return code 0) ()
+
+CONFIG: data/graphs/rdf/taxonomy.g,old_data/grammars/nested_parentheses_subClassOf_type.cnf
+src path:        ../CFPQ_PyAlgo/experiments/samples/taxonomy_smpl_1%_1.txt
+src_count:       57283
+outpus:          (nil)
+adj_matrices:    0x20eb82e0
+terms_count:     4
+nonterms_count:  7
+rules:           0x20eb62b0
+rules_count:     10
+	32.574s

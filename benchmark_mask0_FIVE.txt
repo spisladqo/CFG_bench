@@ -1,0 +1,63 @@
+gcc test.c parser.c -O2  -lgraphblas -llagraph -llagraphx -I/usr/local/include/suitesparse -I./ \
+	-o test && ./test
+Start bench
+CONFIG: data/graphs/c_alias/init.g,data/grammars/c_alias_rewritten.cnf
+src_count: 24462
+	7.429s	7.640s	7.472s	8.487s	8.286s
+	Time elapsed (avg): 7.862838 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/mm.g,data/grammars/c_alias_rewritten.cnf
+src_count: 25382
+	11.940s	12.081s	11.446s	11.082s	11.665s
+	Time elapsed (avg): 11.643131 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/ipc.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34010
+	12.463s	12.607s	12.365s	12.309s	12.576s
+	Time elapsed (avg): 12.463873 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/lib.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34013
+	13.987s	14.397s	13.581s	13.895s	13.463s
+	Time elapsed (avg): 13.864429 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/block.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34232
+	12.598s	12.667s	13.317s	12.931s	12.816s
+	Time elapsed (avg): 12.865843 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/arch.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34484
+	12.193s	12.088s	12.461s	11.901s	12.933s
+	Time elapsed (avg): 12.315317 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/crypto.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34649
+	12.871s	12.686s	13.754s	13.768s	12.620s
+	Time elapsed (avg): 13.139804 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/security.g,data/grammars/c_alias_rewritten.cnf
+src_count: 34799
+	14.870s	14.785s	14.816s	15.395s	14.652s
+	Time elapsed (avg): 14.903778 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/sound.g,data/grammars/c_alias_rewritten.cnf
+src_count: 35288
+	12.582s	12.509s	12.567s	12.526s	12.694s
+	Time elapsed (avg): 12.575500 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/fs.g,data/grammars/c_alias_rewritten.cnf
+src_count: 41774
+	15.618s	15.847s	15.622s	15.592s	15.744s
+	Time elapsed (avg): 15.684821 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/net.g,data/grammars/c_alias_rewritten.cnf
+src_count: 40394
+	16.522s	16.500s	16.473s	16.486s	16.156s
+	Time elapsed (avg): 16.427383 seconds. Result: 0 (return code 0) ()
+
+CONFIG: data/graphs/c_alias/drivers.g,data/grammars/c_alias_rewritten.cnf
+src_count: 42738
+	18.493s	17.910s	17.819s	17.797s	17.822s
+	Time elapsed (avg): 17.968042 seconds. Result: 0 (return code 0) ()
+
