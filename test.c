@@ -10,15 +10,15 @@
 //                              grammar.nonterms_count, grammar.rules,            \
 //                              grammar.rules_count, msg)
 
-// #define run_algorithm()                                                        \
-//     LAGraph_CFL_reachability_multsrc(outputs, adj_matrices, src, src_count, grammar.terms_count,       \
-//                              grammar.nonterms_count, grammar.rules,            \
-//                              grammar.rules_count, msg)
-
 #define run_algorithm()                                                        \
-    LAGraph_CFL_reachability_multsrc_fast(outputs, adj_matrices, src, src_count, grammar.terms_count,       \
+    LAGraph_CFL_reachability_multsrc(outputs, adj_matrices, src, src_count, grammar.terms_count,       \
                              grammar.nonterms_count, grammar.rules,            \
-                             grammar.rules_count, msg, 1 )
+                             grammar.rules_count, msg)
+
+// #define run_algorithm()                                                        \
+//     LAGraph_CFL_reachability_multsrc_fast(outputs, adj_matrices, src, src_count, grammar.terms_count,       \
+//                              grammar.nonterms_count, grammar.rules,            \
+//                              grammar.rules_count, msg, 1 )
 
 
 #define check_error(error)                                                     \
@@ -82,54 +82,102 @@ void free_workspace() {
     grammar = (grammar_t){0, 0, 0, NULL};
 }
 
-char *configs_rdf[] = {"data/graphs/rdf/go_hierarchy.g,data/grammars/"
+char *configs_rdf[] = {
+                       "data/graphs/rdf/go_hierarchy.g,old_data/grammars/"
                        "nested_parentheses_subClassOf_type.cnf",
-                       "data/graphs/rdf/taxonomy.g,data/grammars/"
+                    //    "data/graphs/rdf/taxonomy.g,old_data/grammars/"
+                    //    "nested_parentheses_subClassOf_type.cnf",
+                    //    "data/graphs/rdf/eclass.g,old_data/grammars/"
+                    //    "nested_parentheses_subClassOf_type.cnf",
+                       "data/graphs/rdf/go.g,old_data/grammars/"
                        "nested_parentheses_subClassOf_type.cnf",
-                       "data/graphs/rdf/eclass.g,data/grammars/"
-                       "nested_parentheses_subClassOf_type.cnf",
-                       "data/graphs/rdf/go.g,data/grammars/"
-                       "nested_parentheses_subClassOf_type.cnf",
-                       "data/graphs/rdf/taxonomy_hierarchy.g,data/grammars/"
+                       "data/graphs/rdf/taxonomy_hierarchy.g,old_data/grammars/"
                        "nested_parentheses_subClassOf_type.cnf",
                        NULL};
 
 char *configs_java[] = {
-    "data/graphs/java/eclipse.g,data/grammars/java_points_to.cnf",
-    "data/graphs/java/lusearch.g,data/grammars/java_points_to.cnf",
-    "data/graphs/java/luindex.g,data/grammars/java_points_to.cnf",
-    "data/graphs/java/commons_io.g,data/grammars/java_points_to.cnf",
-    "data/graphs/java/sunflow.g,data/grammars/java_points_to.cnf",
+    "data/graphs/java/avrora.g,old_data/grammars/java_points_to.cnf",
+    "data/graphs/java/batik.g,old_data/grammars/java_points_to.cnf",
+    "data/graphs/java/commons_io.g,old_data/grammars/java_points_to.cnf",
+    "data/graphs/java/commons_lang3.g,old_data/grammars/java_points_to.cnf",
+    "data/graphs/java/eclipse.g,old_data/grammars/java_points_to.cnf",
+    "data/graphs/java/fop.g,old_data/grammars/java_points_to.cnf",
+    "data/graphs/java/gson.g,old_data/grammars/java_points_to.cnf",
+    "data/graphs/java/h2.g,old_data/grammars/java_points_to.cnf",
+    "data/graphs/java/luindex.g,old_data/grammars/java_points_to.cnf",
+    "data/graphs/java/mockito.g,old_data/grammars/java_points_to.cnf",
+    "data/graphs/java/pmd.g,old_data/grammars/java_points_to.cnf",
+    "data/graphs/java/sunflow.g,old_data/grammars/java_points_to.cnf",
+    "data/graphs/java/xalan.g,old_data/grammars/java_points_to.cnf",
+    "data/graphs/java/tomcat.g,old_data/grammars/java_points_to.cnf",
     NULL};
 
 char *configs_c_alias[] = {
-    "data/graphs/c_alias/init.g,data/grammars/c_alias_rewritten.cnf",
-    "data/graphs/c_alias/mm.g,data/grammars/c_alias_rewritten.cnf",
-    "data/graphs/c_alias/ipc.g,data/grammars/c_alias_rewritten.cnf",
-    "data/graphs/c_alias/lib.g,data/grammars/c_alias_rewritten.cnf",
-    "data/graphs/c_alias/block.g,data/grammars/c_alias_rewritten.cnf",
-    "data/graphs/c_alias/arch.g,data/grammars/c_alias_rewritten.cnf",
-    "data/graphs/c_alias/crypto.g,data/grammars/c_alias_rewritten.cnf",
-    "data/graphs/c_alias/security.g,data/grammars/c_alias_rewritten.cnf",
-    "data/graphs/c_alias/sound.g,data/grammars/c_alias_rewritten.cnf",
-    "data/graphs/c_alias/fs.g,data/grammars/c_alias_rewritten.cnf",
-    "data/graphs/c_alias/net.g,data/grammars/c_alias_rewritten.cnf",
-    "data/graphs/c_alias/drivers.g,data/grammars/c_alias_rewritten.cnf",
+    "data/graphs/c_alias/init.g,old_data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/arch.g,old_data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/block.g,old_data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/crypto.g,old_data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/drivers.g,old_data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/mm.g,old_data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/ipc.g,old_data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/lib.g,old_data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/security.g,old_data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/sound.g,old_data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/fs.g,old_data/grammars/c_alias.cnf",
+    "data/graphs/c_alias/net.g,old_data/grammars/c_alias.cnf",
     NULL};
 
-char *configs_vf[] = {"data/graphs/vf/xz.g,data/grammars/vf.cnf",
-                      "data/graphs/vf/nab.g,data/grammars/vf.cnf",
-                      "data/graphs/vf/leela.g,data/grammars/vf.cnf", NULL};
+char *configs_vf[] = {"data/graphs/vf/xz.g,old_data/grammars/vf.cnf",
+                      "data/graphs/vf/nab.g,old_data/grammars/vf.cnf",
+                      "data/graphs/vf/leela.g,old_data/grammars/vf.cnf", NULL};
 
-char *configs_my[] = {"data/graphs/vf/xz.g,data/grammars/vf.cnf", NULL};
+char *configs_my[] = {"data/graphs/vf/xz.g,old_data/grammars/vf.cnf", NULL};
+
+char *configs_all[] = {
+    "data/graphs/rdf/go_hierarchy.g,old_data/grammars/"
+    "nested_parentheses_subClassOf_type.cnf",
+    "data/graphs/rdf/go.g,old_data/grammars/"
+    "nested_parentheses_subClassOf_type.cnf",
+    "data/graphs/rdf/taxonomy_hierarchy.g,old_data/grammars/"
+    "nested_parentheses_subClassOf_type.cnf",
+
+    // "data/graphs/java/avrora.g,old_data/grammars/java_points_to.cnf",
+    // "data/graphs/java/batik.g,old_data/grammars/java_points_to.cnf",
+    // "data/graphs/java/commons_io.g,old_data/grammars/java_points_to.cnf",
+    // "data/graphs/java/commons_lang3.g,old_data/grammars/java_points_to.cnf",
+    // "data/graphs/java/eclipse.g,old_data/grammars/java_points_to.cnf",
+    // "data/graphs/java/fop.g,old_data/grammars/java_points_to.cnf",
+    // "data/graphs/java/gson.g,old_data/grammars/java_points_to.cnf",
+    // "data/graphs/java/h2.g,old_data/grammars/java_points_to.cnf",
+    // "data/graphs/java/luindex.g,old_data/grammars/java_points_to.cnf",
+    // "data/graphs/java/mockito.g,old_data/grammars/java_points_to.cnf",
+    // "data/graphs/java/pmd.g,old_data/grammars/java_points_to.cnf",
+    // "data/graphs/java/sunflow.g,old_data/grammars/java_points_to.cnf",
+    // "data/graphs/java/xalan.g,old_data/grammars/java_points_to.cnf",
+    // "data/graphs/java/tomcat.g,old_data/grammars/java_points_to.cnf",
+
+    // "data/graphs/c_alias/init.g,old_data/grammars/c_alias.cnf",
+    // "data/graphs/c_alias/arch.g,old_data/grammars/c_alias.cnf",
+    // "data/graphs/c_alias/block.g,old_data/grammars/c_alias.cnf",
+    // "data/graphs/c_alias/crypto.g,old_data/grammars/c_alias.cnf",
+    // "data/graphs/c_alias/drivers.g,old_data/grammars/c_alias.cnf",
+    // "data/graphs/c_alias/mm.g,old_data/grammars/c_alias.cnf",
+    // "data/graphs/c_alias/ipc.g,old_data/grammars/c_alias.cnf",
+    // "data/graphs/c_alias/lib.g,old_data/grammars/c_alias.cnf",
+    // "data/graphs/c_alias/security.g,old_data/grammars/c_alias.cnf",
+    // "data/graphs/c_alias/sound.g,old_data/grammars/c_alias.cnf",
+    // "data/graphs/c_alias/fs.g,old_data/grammars/c_alias.cnf",
+    // "data/graphs/c_alias/net.g,old_data/grammars/c_alias.cnf",
+    NULL
+};
 
 // Number of benchmark runs on a single graph
-#define COUNT 10
+#define COUNT 20
 // If true, the first run is done without measuring time (warm-up)
 #define HOT false
 // Use your custom configuration for the benchmark (default is the xz.g graph
 // and vf.cnf grammar)
-#define configs configs_c_alias
+#define configs configs_all
 
 GrB_Index* load_array_stream(const char *filename, int *count) {
     FILE *file = fopen(filename, "r");
@@ -207,6 +255,13 @@ GrB_Index* load_array_stream(const char *filename, int *count) {
     return array;
 }
 
+void print_grammar(grammar_t grammar) {
+    for (int i = 0; i < grammar.rules_count; i++) {
+        LAGraph_rule_WCNF rule = grammar.rules[i];
+        printf("rule %d: %d -> %d %d (%d)\n", i, rule.nonterm, rule.prod_A, rule.prod_B, rule.index);
+    }
+}
+
 int main(int argc, char **argv) {
     setup();
     GrB_Info retval;
@@ -221,7 +276,6 @@ int main(int argc, char **argv) {
         fflush(stdout);
         parser(config, &grammar, &adj_matrices);
 
-
         double start[COUNT];
         double end[COUNT];
 
@@ -229,52 +283,125 @@ int main(int argc, char **argv) {
         //     run_algorithm();
         // }
 
-        char *filename;
         int src_count;
+        char *src_path;
         if (strstr(config, "init.g") != NULL) {
             // printf("graph: init\n");
-            filename = "../CFPQ_PyAlgo/results/sources/init_src.txt_sample.txt";
+            src_path = "../CFPQ_PyAlgo/experiments/samples/init_smpl_5%_2.txt";
         }
         if (strstr(config, "mm.g") != NULL) {
             // printf("graph: mm\n");
-            filename = "../CFPQ_PyAlgo/results/sources/mm_src.txt_sample.txt";
+            src_path = "../CFPQ_PyAlgo/experiments/samples/mm_smpl_5%_2.txt";
         }
         if (strstr(config, "ipc.g") != NULL) {
             // printf("graph: ipc\n");
-            filename = "../CFPQ_PyAlgo/results/sources/ipc_src.txt_sample.txt";
+            src_path = "../CFPQ_PyAlgo/experiments/samples/ipc_smpl_5%_2.txt";
         }
         if (strstr(config, "lib.g") != NULL) {
             // printf("graph: lib\n");
-            filename = "../CFPQ_PyAlgo/results/sources/lib_src.txt_sample.txt";
+            src_path = "../CFPQ_PyAlgo/experiments/samples/lib_smpl_5%_2.txt";
         }
         if (strstr(config, "block.g") != NULL) {
             // printf("graph: block\n");
-            filename = "../CFPQ_PyAlgo/results/sources/block_src.txt_sample.txt";
+            src_path = "../CFPQ_PyAlgo/experiments/samples/block_smpl_5%_2.txt";
         }
         if (strstr(config, "arch.g") != NULL) {
             // printf("graph: arch\n");
-            filename = "../CFPQ_PyAlgo/results/sources/arch_src.txt_sample.txt";
+            src_path = "../CFPQ_PyAlgo/experiments/samples/arch_smpl_5%_2.txt";
         }
         if (strstr(config, "crypto.g") != NULL) {
-            filename = "../CFPQ_PyAlgo/results/sources/crypto_src.txt_sample.txt";
+            src_path = "../CFPQ_PyAlgo/experiments/samples/crypto_smpl_5%_2.txt";
         }
         if (strstr(config, "security.g") != NULL) {
-            filename = "../CFPQ_PyAlgo/results/sources/security_src.txt_sample.txt";
+            src_path = "../CFPQ_PyAlgo/experiments/samples/security_smpl_5%_2.txt";
         }
         if (strstr(config, "sound.g") != NULL) {
-            filename = "../CFPQ_PyAlgo/results/sources/sound_src.txt_sample.txt";
+            src_path = "../CFPQ_PyAlgo/experiments/samples/sound_smpl_5%_2.txt";
         }
         if (strstr(config, "fs.g") != NULL) {
-            filename = "../CFPQ_PyAlgo/results/sources/fs_src.txt_sample.txt";
+            src_path = "../CFPQ_PyAlgo/experiments/samples/fs_smpl_5%_2.txt";
         }
         if (strstr(config, "net.g") != NULL) {
-            filename = "../CFPQ_PyAlgo/results/sources/net_src.txt_sample.txt";
+            src_path = "../CFPQ_PyAlgo/experiments/samples/net_smpl_5%_2.txt";
         }
         if (strstr(config, "drivers.g") != NULL) {
-            filename = "../CFPQ_PyAlgo/results/sources/drivers_src.txt_sample.txt";
+            src_path = "../CFPQ_PyAlgo/experiments/samples/drivers_smpl_5%_2.txt";
         }
-        GrB_Index* src = load_array_stream(filename, &src_count);
-        printf("src_count: %d\n", src_count);
+        if (strstr(config, "go_hierarchy.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/go_hierarchy_smpl_5%_2.txt";
+        }
+        if (strstr(config, "eclass.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/eclass_smpl_5%_2.txt";
+        }
+        if (strstr(config, "go.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/go_smpl_5%_2.txt";
+        }
+        if (strstr(config, "taxonomy.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/taxonomy_smpl_5%_2.txt";
+        }
+        if (strstr(config, "taxonomy_hierarchy.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/taxonomy_hierarchy_smpl_5%_2.txt";
+        }
+        if (strstr(config, "avrora.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/avrora_smpl_5%_2.txt";
+        }
+        if (strstr(config, "batik.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/batik_smpl_5%_2.txt";
+        }
+        if (strstr(config, "commons_io.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/commons_io_smpl_5%_2.txt";
+        }
+        if (strstr(config, "commons_lang3.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/commons_lang3_smpl_5%_2.txt";
+        }
+        if (strstr(config, "eclipse.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/eclipse_smpl_5%_2.txt";
+        }
+        if (strstr(config, "fop.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/fop_smpl_5%_2.txt";
+        }
+        if (strstr(config, "gson.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/gson_smpl_5%_2.txt";
+        }
+        if (strstr(config, "h2.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/h2_smpl_5%_2.txt";
+        }
+        if (strstr(config, "luindex.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/luindex_smpl_5%_2.txt";
+        }
+        if (strstr(config, "mockito.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/mockito_smpl_5%_2.txt";
+        }
+        if (strstr(config, "pmd.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/pmd_smpl_5%_2.txt";
+        }
+        if (strstr(config, "sunflow.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/sunflow_smpl_5%_2.txt";
+        }
+        if (strstr(config, "tomcat.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/tomcat_smpl_5%_2.txt";
+        }
+        if (strstr(config, "tradebeans.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/tradebeans_smpl_5%_2.txt";
+        }
+        if (strstr(config, "tradesoap.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/tradesoap_smpl_5%_2.txt";
+        }
+        if (strstr(config, "xalan.g") != NULL) {
+            src_path = "../CFPQ_PyAlgo/experiments/samples/xalan_smpl_5%_2.txt";
+        }
+
+
+        GrB_Index* src = load_array_stream(src_path, &src_count);
+        printf("src path:        %s\n", src_path);
+        printf("src_count:       %d\n", src_count);
+        printf("outpus:          %p\n", outputs);
+        printf("adj_matrices:    %p\n", adj_matrices);
+        printf("terms_count:     %d\n", grammar.terms_count);
+        printf("nonterms_count:  %d\n", grammar.nonterms_count);
+        printf("rules:           %p\n", grammar.rules);
+        printf("rules_count:     %d\n", grammar.rules_count);
+        // print_grammar(grammar);
 
         GrB_Index nnz = 0;
         for (size_t i = 0; i < COUNT; i++) {
