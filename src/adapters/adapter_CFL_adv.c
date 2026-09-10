@@ -203,7 +203,7 @@ static GrB_Info adapter_CFL_adv_init_outputs() {
 //
 // this should be called after adapter_CFL_adv_init_outputs
 static GrB_Info adapter_CFL_adv_run() {
-    TRY(LAGraph_CFL_reachability_adv(state.outputs, state.adj_matrices, state.symbols_amount, state.grammar.rules,
+    (LAGraph_CFL_reachability_adv(state.outputs, state.adj_matrices, state.symbols_amount, state.grammar.rules,
                                      state.grammar.rules_count, state.msg, state.optimizations));
     return GrB_SUCCESS;
 }

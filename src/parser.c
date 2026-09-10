@@ -415,6 +415,7 @@ ParserResult parser(config_row config_i) {
     printf("Process graph...");
     FILE *graph_file = fopen(config_graph, "r");
     Graph graph = process_graph(graph_file, &list);
+    graph.path = config_graph;
     // printf("OK\n");
 
 #if false
@@ -430,7 +431,7 @@ ParserResult parser(config_row config_i) {
     fclose(graph_file);
     fclose(grammar_file);
     free(config_grammar);
-    free(config_graph);
+    // free(config_graph);
 
     return (ParserResult){.block_count = graph.block_count,
                           .node_count = graph.node_count,
@@ -439,7 +440,7 @@ ParserResult parser(config_row config_i) {
                           .graph = graph};
 }
 
-void get_configs_from_file(char *path, size_t *configs_count, config_row *configs) {
+char* get_configs_from_file(char *path, size_t *configs_count, config_row *configs) {
     *configs_count = 0;
     char *config_text = read_entire_file(path);
 
@@ -463,4 +464,6 @@ void get_configs_from_file(char *path, size_t *configs_count, config_row *config
         configs[(*configs_count)++] = (config_row){.grammar = grammar, .graph = graph, .valid_result = valid_result};
         line = end + 1;
     }
+
+    return config_text;
 }

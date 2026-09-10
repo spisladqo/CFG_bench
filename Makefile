@@ -6,7 +6,7 @@ ALGO_I=-I../LAGraph/src/utility
 ALGO_OBJ = LAGraph_CFL_reachability_advanced.o
 ALGO_OPT_OBJ=LAGraph_CFL_optimized_matrix_opt.o
 ALGO_OBJ_V = LAGraph_CFL_reachability_advanced_V.o
-SRC_FILES = src/test.c src/parser.c src/adapters/adapter_CFL_adv.c src/symbol_list.c
+SRC_FILES = src/test.c src/parser.c src/adapters/*.c src/symbol_list.c
 
 all: bench_compile_v
 

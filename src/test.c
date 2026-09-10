@@ -79,7 +79,7 @@ void print_list(SymbolList list, size_t *map) {
 #define GREEN "\033[32m" /* Green */
 
 // Number of benchmark runs on a single graph
-#define COUNT 10
+#define COUNT 20
 // If true, the first run is done without measuring time (warm-up)
 #define HOT false
 // Use your custom configuration for the benchmark (default is the xz.g graph
@@ -92,7 +92,7 @@ void print_list(SymbolList list, size_t *map) {
 #define OPT_BLOCK (1 << 3)
 
 int main(int argc, char **argv) {
-    GrB_Info retval;
+    GrB_Info retval = GrB_SUCCESS;
     int8_t optimizations = 0;
     int opt;
     bool is_test = false;
@@ -103,44 +103,36 @@ int main(int argc, char **argv) {
     AdapterMethods adapter = {0};
 
     while ((opt = getopt(argc, argv, "eflbtc:a:")) != -1) {
+        printf("opt: %d\n", opt);
         switch (opt) {
-        case 'e':
-            optimizations |= OPT_EMPTY;
-            break;
-        case 'f':
-            optimizations |= OPT_FORMAT;
-            break;
-        case 'l':
-            optimizations |= OPT_LAZY;
-            break;
-        case 'b':
-            optimizations |= OPT_BLOCK;
-            break;
-        case 't':
-            is_test = true;
-            break;
+        case 'e': optimizations |= OPT_EMPTY; break;
+        case 'f': optimizations |= OPT_FORMAT; break;
+        case 'l': optimizations |= OPT_LAZY; break;
+        case 'b': optimizations |= OPT_BLOCK; break;
+        case 't': is_test = true; break;
         case 'c':
             is_config = true;
             input_config = optarg;
-            printf("Choosen config: %s\n", input_config);
+            printf("Chosen config: %s\n", input_config);
             break;
         case 'a':
             is_algo_choosed = true;
             char *algo = optarg;
-            printf("Choosen algorithm: %s\n", algo);
-
+            printf("Chosen algorithm: %s\n", algo);
             if (strcmp(algo, "CFL_adv") == 0) {
                 adapter = adapter_CFL_adv_get_methods();
             } else if (strcmp(algo, "CFL") == 0) {
                 fprintf(stderr, "CFL algorithm is not implemented yet\n");
                 exit(EXIT_FAILURE);
+            } else if (strcmp(algo, "CFL_multsrc_adv") == 0) {
+                adapter = adapter_CFL_multsrc_adv_get_methods();
             } else {
                 fprintf(stderr, "Unknown algorithm: %s\n", algo);
                 exit(EXIT_FAILURE);
             }
             break;
         default:
-            fprintf(stderr, "Usage: %s [-e] [-f] [-l]\n", argv[0]);
+            fprintf(stderr, "Usage: %s [-e] [-f] [-l] [-b] [-t] -c config -a algo\n", argv[0]);
             exit(EXIT_FAILURE);
         }
     }
@@ -150,16 +142,7 @@ int main(int argc, char **argv) {
         printf("No algorithm choosed, using CFL_adv by default\n");
     }
 
-    // printf("adapter.setup function pointer: %p\n", (void*)adapter.setup);
-    // fflush(stdout);
     TRY(adapter.setup());
-    // GrB_Info info = adapter.setup();
-    // printf("adapter.setup() returned: %d (0x%x)\n", info, info);
-    // fflush(stdout);
-    // if (info < GrB_SUCCESS) {
-    //     fprintf(stderr, "Setup failed with code %d\n", info);
-    //     return info;
-    // }
 
     if (!is_config) {
         fprintf(stderr, "Need to choose config by flag -c [config file]\n");
@@ -168,16 +151,16 @@ int main(int argc, char **argv) {
 
     size_t configs_count = 0;
     config_row *configs = calloc(1000, sizeof(config_row));
-    get_configs_from_file(input_config, &configs_count, configs);
+    char* text_ptr = get_configs_from_file(input_config, &configs_count, configs);
 
     printf("Start bench\n");
     fflush(stdout);
 
-    for (size_t i = 0; i < configs_count; i++) {
+    for (size_t cfg_idx = 0; cfg_idx < configs_count; cfg_idx++) {
         double start[COUNT];
         double end[COUNT];
 
-        config_row config = configs[i];
+        config_row config = configs[cfg_idx];
         printf("CONFIG: grammar: %s, graph: %s\n", config.grammar, config.graph);
         fflush(stdout);
 
@@ -185,29 +168,34 @@ int main(int argc, char **argv) {
         adapter.prepare(parser_result, &(CFL_adv_PrepareData){.optimizations = optimizations});
 
         bool is_hot = HOT;
+        size_t last_result = 0;
+        int last_retval = GrB_SUCCESS;
 
-        for (size_t i = 0; i < COUNT; i++) {
+        for (size_t iter = 0; iter < COUNT; iter++) {
             TRY(adapter.init_outputs());
 
-            start[i] = LAGraph_WallClockTime();
+            start[iter] = LAGraph_WallClockTime();
 #ifndef CI
             retval = adapter.run();
 #endif
-            end[i] = LAGraph_WallClockTime();
+            end[iter] = LAGraph_WallClockTime();
+
+            // Retrieve result BEFORE freeing outputs
+            size_t current_result = adapter.get_result();
+            last_result = current_result;   // store for later printing
+            last_retval = retval;
 
             if (is_test) {
-                size_t result = adapter.get_result();
                 if (adapter.is_result_valid(config.valid_result)) {
-                    printf("\tResult: %ld (Return code: %d)" GREEN " [OK]" RESET, result, retval);
+                    printf("\tResult: %ld (Return code: %d)" GREEN " [OK]" RESET, current_result, retval);
                 } else {
-                    printf("\tResult: %ld (Return code: %d)" RED " [Wrong]" RESET " (Result must be %ld)", result,
-                           retval, config.valid_result);
+                    printf("\tResult: %ld (Return code: %d)" RED " [Wrong]" RESET " (Result must be %ld)",
+                           current_result, retval, config.valid_result);
                 }
-
                 if (retval != 0) {
                     printf("\t(MSG: %s)", msg);
                 }
-                printf(" (%.4f sec)", end[i] - start[i]);
+                printf(" (%.4f sec)", end[iter] - start[iter]);
 
                 TRY(adapter.free_outputs());
                 break;
@@ -215,39 +203,36 @@ int main(int argc, char **argv) {
 
             if (is_hot) {
                 is_hot = false;
-                i--;
+                iter--;   // re-run this iteration after freeing
                 TRY(adapter.free_outputs());
                 continue;
             }
 
-            printf("\t%.3fs", end[i] - start[i]);
+            printf("\t%.5fs", end[iter] - start[iter]);
             fflush(stdout);
 
             TRY(adapter.free_outputs());
         }
-        printf("\n");
 
         if (is_test) {
             adapter.cleanup();
-
             fflush(stdout);
             continue;
         }
 
+        // Normal mode: compute average time and print final result
         double sum = 0;
         for (size_t i = 0; i < COUNT; i++) {
             sum += end[i] - start[i];
         }
-        size_t result = adapter.get_result();
-        printf("\tTime elapsed (avg): %.6f seconds. Result: %ld (return code "
-               "%d) (%s)\n\n",
-               sum / COUNT, result, retval, msg);
+        printf("\n\tTime elapsed (avg): %.6f seconds. Result: %ld (return code %d) (%s)\n\n",
+               sum / COUNT, last_result, last_retval, msg);
 
         TRY(adapter.cleanup());
-
         fflush(stdout);
     }
 
+    free(text_ptr);
     free(configs);
     TRY(adapter.teardown());
     return 0;
