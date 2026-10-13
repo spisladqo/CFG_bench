@@ -133,108 +133,108 @@ static GrB_Index* load_src(const char *config, size_t *count) {
     char *src_path = NULL;
     if (strstr(config, "init.g") != NULL) {
         // printf("graph: init\n");
-        src_path = "../CFPQ_PyAlgo/experiments/samples/init_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/init_smpl_5%_0.txt";
     }
     if (strstr(config, "mm.g") != NULL) {
         // printf("graph: mm\n");
-        src_path = "../CFPQ_PyAlgo/experiments/samples/mm_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/mm_smpl_5%_0.txt";
     }
     if (strstr(config, "ipc.g") != NULL) {
         // printf("graph: ipc\n");
-        src_path = "../CFPQ_PyAlgo/experiments/samples/ipc_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/ipc_smpl_5%_0.txt";
     }
     if (strstr(config, "lib.g") != NULL) {
         // printf("graph: lib\n");
-        src_path = "../CFPQ_PyAlgo/experiments/samples/lib_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/lib_smpl_5%_0.txt";
     }
     if (strstr(config, "block.g") != NULL) {
         // printf("graph: block\n");
-        src_path = "../CFPQ_PyAlgo/experiments/samples/block_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/block_smpl_5%_0.txt";
     }
     if (strstr(config, "arch.g") != NULL) {
         // printf("graph: arch\n");
-        src_path = "../CFPQ_PyAlgo/experiments/samples/arch_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/arch_smpl_5%_0.txt";
     }
     if (strstr(config, "crypto.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/crypto_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/crypto_smpl_5%_0.txt";
     }
     if (strstr(config, "security.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/security_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/security_smpl_5%_0.txt";
     }
     if (strstr(config, "sound.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/sound_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/sound_smpl_5%_0.txt";
     }
     if (strstr(config, "fs.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/fs_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/fs_smpl_5%_0.txt";
     }
     if (strstr(config, "net.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/net_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/net_smpl_5%_0.txt";
     }
     if (strstr(config, "drivers.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/drivers_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/drivers_smpl_5%_0.txt";
     }
     if (strstr(config, "go_hierarchy.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/go_hierarchy_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/go_hierarchy_smpl_5%_0.txt";
     }
     if (strstr(config, "eclass.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/eclass_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/eclass_smpl_5%_0.txt";
     }
     if (strstr(config, "go.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/go_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/go_smpl_5%_0.txt";
     }
     if (strstr(config, "taxonomy.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/taxonomy_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/taxonomy_smpl_5%_0.txt";
     }
     if (strstr(config, "taxonomy_hierarchy.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/taxonomy_hierarchy_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/taxonomy_hierarchy_smpl_5%_0.txt";
     }
     if (strstr(config, "avrora.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/avrora_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/avrora_smpl_5%_0.txt";
     }
     if (strstr(config, "batik.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/batik_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/batik_smpl_5%_0.txt";
     }
     if (strstr(config, "commons_io.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/commons_io_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/commons_io_smpl_5%_0.txt";
     }
     if (strstr(config, "commons_lang3.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/commons_lang3_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/commons_lang3_smpl_5%_0.txt";
     }
     if (strstr(config, "eclipse.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/eclipse_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/eclipse_smpl_5%_0.txt";
     }
     if (strstr(config, "fop.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/fop_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/fop_smpl_5%_0.txt";
     }
     if (strstr(config, "gson.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/gson_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/gson_smpl_5%_0.txt";
     }
     if (strstr(config, "h2.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/h2_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/h2_smpl_5%_0.txt";
     }
     if (strstr(config, "luindex.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/luindex_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/luindex_smpl_5%_0.txt";
     }
     if (strstr(config, "mockito.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/mockito_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/mockito_smpl_5%_0.txt";
     }
     if (strstr(config, "pmd.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/pmd_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/pmd_smpl_5%_0.txt";
     }
     if (strstr(config, "sunflow.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/sunflow_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/sunflow_smpl_5%_0.txt";
     }
     if (strstr(config, "tomcat.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/tomcat_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/tomcat_smpl_5%_0.txt";
     }
     if (strstr(config, "tradebeans.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/tradebeans_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/tradebeans_smpl_5%_0.txt";
     }
     if (strstr(config, "tradesoap.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/tradesoap_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/tradesoap_smpl_5%_0.txt";
     }
     if (strstr(config, "xalan.g") != NULL) {
-        src_path = "../CFPQ_PyAlgo/experiments/samples/xalan_smpl_5%_2.txt";
+        src_path = "../5-sem-practice-data/input/sources/xalan_smpl_5%_0.txt";
     }
     printf("src path: %s\n", src_path);
     FILE *file = fopen(src_path, "r");
